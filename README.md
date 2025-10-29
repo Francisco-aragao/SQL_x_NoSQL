@@ -37,10 +37,6 @@ Instalação direta pelo [site](https://www.mongodb.com/docs/manual/installation
 
 Instalação direta pelo [site](https://cassandra.apache.org/_/download.html) ou no [docker](https://hub.docker.com/_/cassandra).
 
-- Neo4j
-
-Instalação direta pelo [site](https://neo4j.com/docs/operations-manual/current/installation/) ou no [docker](https://hub.docker.com/_/neo4j).
-
 Em todo caso, recomendamos o uso do Docker para facilitar a instalação e configuração dos serviços.
 
 ## Execução dos testes
