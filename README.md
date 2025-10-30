@@ -3,9 +3,9 @@
 Trabalho final desenvolvido para a disciplina de Banco de Dados Avançado - UFMG
 
 ## Integrantes
-- Francisco
-- Gabriel
-- Iasmin
+- Francisco Aragão
+- Gabriel Pains
+- Iasmin Correa
 
 ## Descrição
 
