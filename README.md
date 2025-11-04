@@ -371,3 +371,75 @@ db.users.createIndex({ email: 1 }, { unique: true })
 db.users.createIndex({ handle: 1 }, { unique: true })
 db.activities.createIndex({ userId: 1, dedupKey: 1 }, { unique: true })
 ```
+
+#### 4. Modelagem de sistema de IoT que monitora temperatura e umidade em milhões de sensores.
+
+Cada sensor envia muitas leituras por minuto, há a escrita e leitura concorrente massiva de vários dados de sensores.
+
+DadosSensor possui:
+- id_sensor, data, horario, temperatura, humidade
+
+PostgreSQL
+```sql
+CREATE TABLE sensors (
+  id           text PRIMARY KEY,
+  location     text,
+  model        text,
+  installed_at timestamptz
+);
+
+CREATE TABLE sensor_data (
+  sensor_id   text        NOT NULL REFERENCES sensors(id),
+  ts          timestamptz NOT NULL,
+  temperature real,
+  humidity    real,
+  PRIMARY KEY (sensor_id, ts)
+) PARTITION BY RANGE (ts);
+
+-- exemplo de particionamento
+CREATE TABLE sensor_data_2025_10
+PARTITION OF sensor_data
+FOR VALUES FROM ('2025-10-01') TO ('2025-11-01');
+
+CREATE TABLE sensor_data_2025_11
+PARTITION OF sensor_data
+FOR VALUES FROM ('2025-11-01') TO ('2025-12-01');
+```
+
+Cassandra
+```cql
+CREATE TABLE sensor_data (
+    sensor_id text,
+    date date,
+    timestamp timestamp,
+    temperature float,
+    humidity float,
+    PRIMARY KEY ((sensor_id, date), timestamp)
+) WITH CLUSTERING ORDER BY (timestamp DESC);
+```
+
+Redis
+```redis
+TS.CREATE ts:{sensor_42}:temperature RETENTION 7776000000 LABELS sensor_id sensor_42 metric temperature
+TS.CREATE ts:{sensor_42}:humidity    RETENTION 7776000000 LABELS sensor_id sensor_42 metric humidity
+
+TS.CREATE ts:{sensor_42}:temperature:agg:1h RETENTION 31536000000 LABELS sensor_id sensor_42 metric temperature agg 1h
+
+TS.CREATERULE ts:{sensor_42}:temperature ts:{sensor_42}:temperature:agg:1h AGGREGATION avg 3600000
+```
+
+MongoDB
+```javascript
+{
+  "_id": { "$oid": "..." },
+  "sensor_id": "sensor_42",
+  "ts": ISODate("2025-10-30T10:32:15Z"),
+  "temperature": 24.8,
+  "humidity": 55.2,
+  "meta": { "firmware": "1.4.2" }
+}
+
+db.sensorDataClassic.createIndex({ sensor_id: 1, ts: -1 });
+
+db.sensorDataClassic.createIndex({ ts: 1 }, { expireAfterSeconds: 90 * 24 * 3600 });
+```
