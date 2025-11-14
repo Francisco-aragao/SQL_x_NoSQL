@@ -44,38 +44,33 @@ Em todo caso, recomendamos o uso do Docker para facilitar a instalação e confi
 ### Problemas
 
 #### 1. Modelagem de sistema de vendas possuindo clientes, produtos e items. Tarefa é organizar os clientes e seus pedidos.
-Cliente possui:
-- id, nome, email e data de cadastro
 
-Item possui:
-- id, nome, valor
-
+[Database](https://www.kaggle.com/code/danttis/an-lise-explorat-ria-de-dados)
 
 PostgreSQL
 ```sql
 CREATE TABLE cliente (
-  id            BIGSERIAL PRIMARY KEY,
+  id            UUID PRIMARY KEY,
   nome          VARCHAR(120) NOT NULL,
-  email         VARCHAR(160) UNIQUE NOT NULL,
   data          TIMESTAMP    NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE item (
-  id    BIGSERIAL PRIMARY KEY,
+  id    UUID PRIMARY KEY,
   nome  VARCHAR(120) NOT NULL,
   valor NUMERIC(12,2) NOT NULL CHECK (valor >= 0)
 );
 
 CREATE TABLE pedido (
-  id          BIGSERIAL PRIMARY KEY,
+  id          UUID PRIMARY KEY,
   cliente_id  BIGINT NOT NULL REFERENCES cliente(id) ON DELETE CASCADE,
   data        TIMESTAMP NOT NULL DEFAULT NOW(),
   status      VARCHAR(24) NOT NULL DEFAULT 'pendente'
 );
 
 CREATE TABLE pedido_item (
-  pedido_id  BIGINT NOT NULL REFERENCES pedido(id) ON DELETE CASCADE,
-  item_id    BIGINT NOT NULL REFERENCES item(id),
+  pedido_id  UUID NOT NULL REFERENCES pedido(id) ON DELETE CASCADE,
+  item_id    UUID NOT NULL REFERENCES item(id),
   quantidade INT    NOT NULL CHECK (quantidade > 0),
   preco_unit NUMERIC(12,2) NOT NULL CHECK (preco_unit >= 0), -- preço no momento da compra
   PRIMARY KEY (pedido_id, item_id)
@@ -113,13 +108,13 @@ CREATE TABLE itens_por_pedido (
 
 Redis
 ```redis
-HMSET cliente:<cliente_id> nome "<nome>" email "<email>" data_cadastro "<data_cadastro>"
+HMSET cliente:<customer_id> nome "<nome>" email "<email>" data_cadastro "<data_cadastro>"
 
-HMSET item:<item_id> nome "<nome>" valor "<valor>"
+HMSET item:<product_id> nome "<nome>" valor "<valor>"
 
-HMSET pedido:<pedido_id> cliente_id "<cliente_id>" data_pedido "<data_pedido>" status "<status>"
+HMSET pedido:<order_id> cliente_id "<customer_id>" data_pedido "<data_pedido>" status "<status>"
 
-HSET pedido_item:<pedido_id> <item_id> quantidade "<quantidade>" preco_unit "<preco_unit>"
+HSET pedido_item:<order_id> <product_id> '{"quantidade": <quantidade>, "preco_unit": <preco_unit>}'
 ```
 
 MongoDB
@@ -127,24 +122,23 @@ MongoDB
 {
     _id: ObjectId("<cliente_id>"),
     nome: "<nome>",
-    email: "<email>",
     data_cadastro: ISODate("<data_cadastro>")
 }
 
 {
-    _id: ObjectId("<item_id>"),
+    _id: ObjectId("<item_id>"), 
     nome: "<nome>",
     valor: <valor>
 }
 
 {
-    _id: ObjectId("<pedido_id>"),
-    cliente_id: ObjectId("<cliente_id>"),
+    _id: ObjectId("<pedido_id>"), 
+    cliente_id: ObjectId("<cliente_id>"), 
     data_pedido: ISODate("<data_pedido>"),
     status: "<status>",
-    itens: [
+    itens: [ 
         {
-            item_id: ObjectId("<item_id>"),
+            item_id: ObjectId("<item_id>"), 
             quantidade: <quantidade>,
             preco_unit: <preco_unit>
         },
@@ -443,3 +437,18 @@ db.sensorDataClassic.createIndex({ sensor_id: 1, ts: -1 });
 
 db.sensorDataClassic.createIndex({ ts: 1 }, { expireAfterSeconds: 90 * 24 * 3600 });
 ```
+
+### Estrutura dos arquivos
+
+`problemaX` - Contém o arquivo para cada problema X (1, 2, 3...), conectando com o banco, criando tabelas, inserindo dados e fazendo consultas.
+`data` - Contém os arquivos CSV dentro da pasta de cada problema
+`start_databases.sh` - Script para iniciar os containers Docker com os bancos que serão utilizados.
+`requirements.txt` - Dependências Python necessárias para rodar os scripts em cada problema.
+
+
+## Como rodar
+
+1. Instale o Docker
+2. Execute o script `start_databases.sh` para iniciar os containers com os bancos de dados.
+3. Instale as dependências Python com `pip install -r requirements.txt`
+4. Entre em cada projeto e execute os scripts conforme necessário.
