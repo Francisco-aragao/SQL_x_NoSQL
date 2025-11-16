@@ -25,9 +25,10 @@ docker run -d \
   mongo:latest
 
 echo "init cassandra - port: 9042   "
+# sem passar flag de memoria cassandra não inicia corretamente
 docker run -d \
   --name dev-cassandra \
-  -e MAX_HEAP_SIZE=512M \ # sem isso cassandra não inicia quando pouca memória disponível
+  -e MAX_HEAP_SIZE=512M \
   -e HEAP_NEWSIZE=100M \
   -p 9042:9042 \
   cassandra:latest
