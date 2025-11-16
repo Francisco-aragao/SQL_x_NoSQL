@@ -2,6 +2,8 @@
 
 Trabalho final desenvolvido para a disciplina de Banco de Dados Avançado - UFMG
 
+O trabalho foi motivado pelos artigos: [A performance comparison of SQL and NoSQL databases](https://www.researchgate.net/publication/261079289_A_performance_comparison_of_SQL_and_NoSQL_databases?enrichId=rgreq-c3560ee5a91d852b2ed9781e45f0bf55-XXX&enrichSource=Y292ZXJQYWdlOzI2MTA3OTI4OTtBUzoyOTgwMjU3OTc4NjU0NzNAMTQ0ODA2NjI5NTU5MQ%3D%3D&el=1_x_3&_esc=publicationCoverPdf) e [Comparative case study: An evaluation of performance computacion between SQL and NoSQL databases](https://www.researchgate.net/publication/369173525_Comparative_Case_Study_An_Evaluation_of_Performance_Computation_Between_SQL_And_NoSQL_Database)
+
 ## Integrantes
 - Francisco Aragão
 - Gabriel Pains
@@ -147,6 +149,27 @@ MongoDB
 }
 
 ``` 
+
+As consultas que foram testadas tentam executar operações básicas em bancos de dados (CRUD) mas também explorar operações um pouco mais complexas. Vale destacar que algumas operações não foram possíveis em determinados bancos de dados, devido às limitações de cada projeto.
+
+#### Operações simples (CRUD)
+
+1.  Buscar um cliente específico pelo seu ID.
+2.  Adicionar um novo produto (item) ao catálogo.
+3.  Atualizar o preço de um produto específico (pelo seu ID) para um novo valor.
+4.  Deletar um pedido específico pelo seu ID.
+
+#### Operações de busca e relações
+
+5.  Listar todos os pedidos que tenham um status específico (ex: "cancelado").
+6.  Listar todos os pedidos feitos em um determinado intervalo de datas (ex: no último mês).
+7.  Dado um ID de cliente, encontrar todos os IDs dos pedidos que ele já fez.
+8.  Dado um ID de pedido, buscar todos os itens, quantidades e preços unitários associados a ele.
+
+#### Consultas Complexas
+
+9.  Dado um ID de pedido específico, buscar o nome e o email do cliente que fez aquele pedido.
+10. Contar quantos pedidos cada cliente fez e listar os 10 clientes com mais pedidos.
 
 ---
 
@@ -452,3 +475,15 @@ db.sensorDataClassic.createIndex({ ts: 1 }, { expireAfterSeconds: 90 * 24 * 3600
 2. Execute o script `start_databases.sh` para iniciar os containers com os bancos de dados.
 3. Instale as dependências Python com `pip install -r requirements.txt`
 4. Entre em cada projeto e execute os scripts conforme necessário.
+
+### Problema 1
+```bash
+cd problema1
+python3 -m venv venv # criar ambiente 
+source venv/bin/activate # ativar ambiente
+pip install -r requirements.txt # instalar dependências
+python3 prepare_tables.py # criar tabelas
+python3 populate_tables.py # popular tabelas
+python3 queries.py # executar consultas e salvar resultados na pasta 'results'
+```
+
