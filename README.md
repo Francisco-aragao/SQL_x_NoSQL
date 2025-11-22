@@ -257,168 +257,112 @@ As consultas que foram testadas tentam executar operações básicas em bancos d
 #### 3. Modelagem de perfis de usuários e feed de atividades em uma rede social.
 
 Usuário (perfil) possui: 
-- id, nome, e-mail, preferências, estatísticas, data de criação.
+- id, handle, title, bio, estatísticas, data de criação.
 
 Atividade possui: 
-- id, id do usuário, tipo, origem, conteúdo (payload), métricas, timestamp, chave de deduplicação.
+- id, id do usuário, tipo, timestamp, conteúdo (payload).
 
-PostgreSQL
+PostgreSQL 
+
 ```sql
 CREATE TABLE users (
-    user_id         UUID PRIMARY KEY,
-    handle          VARCHAR(50) UNIQUE NOT NULL,
-    first_name      VARCHAR(100),
-    last_name       VARCHAR(100),
-    email           VARCHAR(150) UNIQUE NOT NULL,
-    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    bio             TEXT,
-    location        VARCHAR(100),
-    avatar_url      TEXT,
-    lang            VARCHAR(10),
-    marketing       BOOLEAN DEFAULT TRUE,
-    privacy_show_email    BOOLEAN DEFAULT FALSE,
-    privacy_show_activity BOOLEAN DEFAULT TRUE,
-    followers       INTEGER DEFAULT 0,
-    following       INTEGER DEFAULT 0,
-    posts           INTEGER DEFAULT 0,
-    tags            TEXT[],
-    schema_version  INTEGER DEFAULT 1
+    user_id       VARCHAR(255) PRIMARY KEY,
+    handle        VARCHAR(255) NOT NULL,
+    title         VARCHAR(255),
+    bio           TEXT,
+    created_at    BIGINT,
+    followers     INTEGER DEFAULT 0,
+    following     INTEGER DEFAULT 0,
+    posts_count   INTEGER DEFAULT 0
 );
 
 CREATE TABLE activities (
-    activity_id     BIGSERIAL PRIMARY KEY,
-    user_id         UUID NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
-    ts              TIMESTAMPTZ NOT NULL,
-    type            VARCHAR(50) NOT NULL,
-    source          VARCHAR(50),
-    payload         JSONB,
-    likes           INTEGER DEFAULT 0,
-    replies         INTEGER DEFAULT 0,
-    visibility      VARCHAR(20) DEFAULT 'public',
-    dedup_key       VARCHAR(255) UNIQUE,
-    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    activity_id   VARCHAR(255) PRIMARY KEY,
+    user_id       VARCHAR(255) NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
+    ts            BIGINT NOT NULL,
+    type          VARCHAR(50) NOT NULL,
+    payload       JSONB,
+    created_at    BIGINT DEFAULT EXTRACT(EPOCH FROM NOW())
 );
+
+CREATE UNIQUE INDEX idx_users_handle ON users(handle);
+CREATE INDEX idx_activities_user ON activities(user_id);
+CREATE INDEX idx_activities_ts ON activities(ts DESC);
 ```
 
-Cassandra
+Cassandra 
+
 ```cql
 CREATE TABLE users (
-    user_id          UUID PRIMARY KEY,
-    handle           TEXT,
-    first_name       TEXT,
-    last_name        TEXT,
-    email            TEXT,
-    created_at       TIMESTAMP,
-    bio              TEXT,
-    location         TEXT,
-    avatar_url       TEXT,
-    lang             TEXT,
-    marketing        BOOLEAN,
-    privacy_show_email    BOOLEAN,
-    privacy_show_activity BOOLEAN,
-    followers        INT,
-    following        INT,
-    posts            INT,
-    tags             SET<TEXT>,
-    schema_version   INT
+    user_id       TEXT PRIMARY KEY,
+    handle        TEXT,
+    title         TEXT,
+    bio           TEXT,
+    created_at    BIGINT,
+    followers     INT,
+    following     INT,
+    posts_count   INT
 );
 
 CREATE TABLE activities (
-    user_id          UUID,
-    ts               TIMESTAMP,
-    activity_id      TIMEUUID,
-    type             TEXT,
-    source           TEXT,
-    payload          TEXT,
-    likes            INT,
-    replies          INT,
-    visibility       TEXT,
-    dedup_key        TEXT,
-    created_at       TIMESTAMP,
+    user_id       TEXT,
+    ts            BIGINT,
+    activity_id   TEXT,
+    type          TEXT,
+    payload       TEXT,
     PRIMARY KEY ((user_id), ts, activity_id)
 ) WITH CLUSTERING ORDER BY (ts DESC);
 
-CREATE TABLE user_by_email (
-  email TEXT PRIMARY KEY,
-  user_id UUID
-);
-
 CREATE TABLE user_by_handle (
   handle TEXT PRIMARY KEY,
-  user_id UUID
+  user_id TEXT
 );
-
-CREATE TABLE activity_dedup (
-  user_id  UUID,
-  dedup_key TEXT,
-  activity_id TIMEUUID,
-  PRIMARY KEY ((user_id), dedup_key)
-);
-
 ```
 
-Redis
+Redis 
+
 ```redis
-HSET user:<user_id> handle <user_handle> first_name <first_name> last_name <last_name> email <email> created_at <created_at> bio <bio> location <location> avatar_url <avatar_url> lang <language_code> marketing <boolean> privacy_show_email <boolean> privacy_show_activity <boolean> followers <int> following <int> posts <int> tags "<tag_1>,<tag_2>,..." schema_version <int>
-HSET activity:<activity_id> user_id <user_id> ts <timestamp> created_at <insert_timestamp> type <activity_type> source <source> payload "<json_string>" likes <int> replies <int> visibility <visibility_level> dedup_key <unique_deduplication_key>
-SETNX user:email:<email> <user_id>
+HSET user:<user_id> handle <user_handle> title <title> bio <bio> created_at <created_at_int> followers <int> following <int> posts <int>
+
+HSET activity:<activity_id> user_id <user_id> ts <timestamp> type <activity_type> payload "<json_string_content_or_target_id>" created_at <insert_timestamp>
+
 SETNX user:handle:<handle> <user_id>
-SETNX dedup:<user_id>:<dedup_key> <activity_id>
+
+LPUSH timeline:<user_id> <activity_id>
 ```
 
-MongoDB
+MongoDB 
+
 ```javascript
 {
-  "_id": "<user_uuid>",
+  "_id": "<id_do_arquivo_koo>",
   "handle": "<user_handle>",
-  "name": {
-    "first": "<first_name>",
-    "last": "<last_name>"
-  },
-  "email": "<email>",
-  "createdAt": ISODate("<created_at>"),
+  "title": "<title>",
   "profile": {
-    "bio": "<bio>",
-    "location": "<location>",
-    "avatarUrl": "<avatar_url>"
+    "bio": "<description>"
   },
-  "prefs": {
-    "lang": "<language_code>",
-    "marketing": <boolean>,
-    "privacy": {
-      "showEmail": <boolean>,
-      "showActivity": <boolean>
-    }
-  },
+  "createdAt": <timestamp_int>,
   "stats": {
-    "followers": <int>,
-    "following": <int>,
-    "posts": <int>
-  },
-  "tags": ["<tag_1>", "<tag_2>", "..."],
-  "schemaVersion": <int>
+    "followers": 0,
+    "following": 0,
+    "posts": 0
+  }
 }
 
 {
-  "_id": ObjectId("<activity_id>"),
-  "userId": "<user_uuid>",
-  "ts": ISODate("<timestamp>"),
-  "type": "<activity_type>",
-  "source": "<source>", 
+  "_id": "<id_da_atividade>",
+  "userId": "<creatorId_ou_liker_id>",
+  "ts": <timestamp_int>,
+  "type": "<POST|LIKE|COMMENT|SHARE>", 
   "payload": {
-    "<key>": "<value>"
-  },
-  "metrics": {
-    "likes": <int>,
-    "replies": <int>
-  },
-  "visibility": "<visibility_level>",
-  "dedupKey": "<unique_deduplication_key>"
-  "createdAt": ISODate("<insert_timestamp>")
+     // dinâmico, conforme o tipo
+     "content": "<conteudo_do_post>",      // Se for POST/COMMENT
+     "targetId": "<id_do_post_original>"   // Se for LIKE/SHARE/COMMENT
+  }
 }
-db.users.createIndex({ email: 1 }, { unique: true })
+
 db.users.createIndex({ handle: 1 }, { unique: true })
-db.activities.createIndex({ userId: 1, dedupKey: 1 }, { unique: true })
+db.activities.createIndex({ userId: 1, ts: -1 })
 ```
 
 #### 4. Modelagem de sistema de IoT que monitora temperatura e umidade em milhões de sensores.
