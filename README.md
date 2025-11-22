@@ -152,7 +152,7 @@ MongoDB
 
 As consultas que foram testadas tentam executar operações básicas em bancos de dados (CRUD) mas também explorar operações um pouco mais complexas. Vale destacar que algumas operações não foram possíveis em determinados bancos de dados, devido às limitações de cada projeto.
 
-#### Operações simples (CRUD)
+#### Operações simples
 
 1.  Buscar um cliente específico pelo seu ID.
 2.  Adicionar um novo produto (item) ao catálogo.
@@ -173,53 +173,85 @@ As consultas que foram testadas tentam executar operações básicas em bancos d
 
 ---
 
-#### 2. Modelagem de acesso a itens vendidos em um e-commerce.
+#### 2. Modelagem de acesso a informações de produtos alimentícios, incluindo especificações nutricionais e ingredientes. Foco é recuperar rapidamente informações sobre produtos.
 
-Itens do e-commerce possuem:
-- id, nome, marca, categoria, especificacoes, data de atualização
+[Database](https://www.kaggle.com/datasets/openfoodfacts/world-food-facts)
 
 PostgreSQL
 ```sql
-CREATE TABLE item (
-    id              BIGSERIAL PRIMARY KEY,
-    nome            VARCHAR(120) NOT NULL,
-    marca           VARCHAR(120) NOT NULL,
-    categoria       VARCHAR(120) NOT NULL,
-    especificacoes  JSONB,
-    data_atualizacao TIMESTAMP NOT NULL DEFAULT NOW()
+CREATE TABLE produto (
+    id              VARCHAR(50) PRIMARY KEY,
+    nome            VARCHAR(255),
+    marca           VARCHAR(255),
+    categoria       VARCHAR(255),
+    energia         REAL,
+    gordura         REAL,
+    carboidratos    REAL,
+    proteinas       REAL,
+    fibras          REAL,
+    sodio           REAL, 
+    data_atualizacao TIMESTAMP
 );
 ```
 
 Cassandra
 ```cql
-CREATE TABLE itens (
-    item_id UUID PRIMARY KEY,
+CREATE TABLE produtos (
+    produto_id TEXT PRIMARY KEY,
     nome TEXT,
     marca TEXT,
     categoria TEXT,
-    especificacoes MAP<TEXT, TEXT>,
+    nutrientes MAP<TEXT, FLOAT>, -- Ex: {'energia': 500, 'gordura': 10}
     data_atualizacao TIMESTAMP
 );
 ```
 
 Redis
 ```redis
-HMSET item:<item_id> nome "<nome>" marca "<marca>" categoria "<categoria>" especificacoes "<especificacoes>" data_atualizacao "<data_atualizacao>"
+HMSET item:<id> nome "..." marca "..." categoria "..." energia "..." gordura "..."
+
+# indices pra realizar buscas -> sem isso não da pra fazer no redis
+SADD idx:marca:<marca> <id>    
+SADD idx:categoria:<categoria> <id> 
+ZADD idx:energia <energia> <id>  
 ``` 
 
 MongoDB
 ```javascript
 {
-    _id: ObjectId("<item_id>"),
-    nome: "<nome>",
-    marca: "<marca>",
-    categoria: "<categoria>",
-    especificacoes: {
-        //...
+    _id: "<code_barras>",
+    nome: "...",
+    marca: "...",
+    categoria: "...",
+    nutrientes: {
+        energia: 500,
+        gordura: 10,
+        ...
     },
-    data_atualizacao: ISODate("<data_atualizacao>")
+    data_atualizacao: ISODate("...")
 }
 ```
+
+As consultas que foram testadas tentam executar operações básicas em bancos de dados (CRUD) mas também explorar operações um pouco mais complexas. No Redis foi necessário criar indíces para permitir a execução de algumas consultas (simular filtros). No postgress algumas consultas não foram possíveis devido à falta de suporte a esquemas dinamicos (até existe o JSONB, mas não foi utilizado para focar no modelo relacional tradicional).
+
+#### Operações simples 
+
+1.  Buscar um produto específico pelo seu código de barras (ID).
+2.  Adicionar um novo produto com dados básicos e nutricionais.
+3.  Adicionar um campo novo ("Vitamina C") a um produto existente 
+4.  Deletar um produto específico pelo seu ID.
+
+#### Operações de busca e filtros
+
+5.  Listar todos os produtos que pertencem a uma categoria específica 
+6.  Listar produtos de uma marca específica que tenham NutriScore 'A'
+7.  Listar produtos com valor de energia entre um intervalo específico 
+8.  Listar produtos que possuem a informação de "Cálcio" preenchida (teste de nulidade/existência).
+
+#### Consultas Complexas
+
+9.  Buscar produtos que contenham uma palavra específica no nome 
+10. Calcular a média de carboidratos para cada categoria e listar as 5 categorias com maior média.
 ---
 
 #### 3. Modelagem de perfis de usuários e feed de atividades em uma rede social.
@@ -479,9 +511,7 @@ db.sensorDataClassic.createIndex({ ts: 1 }, { expireAfterSeconds: 90 * 24 * 3600
 ### Problema 1
 ```bash
 cd problema1
-python3 -m venv venv # criar ambiente 
-source venv/bin/activate # ativar ambiente
-pip install -r requirements.txt # instalar dependências
+# necessário estar com o ambiente virtual ativado e o Docker em execução
 python3 prepare_tables.py # criar tabelas
 python3 populate_tables.py # popular tabelas
 python3 queries.py # executar consultas e salvar resultados na pasta 'results'

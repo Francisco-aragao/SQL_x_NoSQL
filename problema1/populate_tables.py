@@ -41,7 +41,7 @@ def load_source_data(limit_rows=None):
     """
     Função pra carregar todos os CSVs, limpar  e retornar os arquivos prontos.
     """
-    print(f"lendo de '{DATA_DIR}' ---")
+    print(f"lendo de '{DATA_DIR}'")
     
     df_customers = pd.read_csv(os.path.join(DATA_DIR, 'customers.csv'))
     df_customers = df_customers.dropna(subset=['customer_id'])

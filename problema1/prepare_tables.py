@@ -113,7 +113,7 @@ def create_cassandra():
         print(f"erro --> Cassandra: {e}")
 
 def prepare_mongo():
-    print("mongo preparando coleções")
+    print("mongo criando tabelas")
     try:
         client = MongoClient("mongodb://admin:admin@localhost:27017/")
         db = client["trabalho_bd"]
@@ -124,7 +124,7 @@ def prepare_mongo():
         
         # não tem nada pra fazer, só apago o que tinha antes mesmo pois mongo usa lazy creation
         
-        print("mongo coleções limpas e prontas.")
+        print("mongo pronto.")
     except Exception as e:
         print(f"erro --> MongoDB: {e}")
 

@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from collections import Counter
+import traceback
 
 from abstract_queries import AbstractDb, ProductData
 
@@ -134,7 +135,7 @@ class MongoDb(AbstractDb):
             self.conn.close()
             print("mongodb desconectado")
 
-    def read_cliente(self, cliente_id: str) -> Optional[Dict[str, Any]]:
+    def read_cliente(self, cliente_id: str) -> Dict[str, Any]:
         doc = self.db.clientes.find_one({"_id": cliente_id})
         return _mongo_fix_id(doc)
 
@@ -181,7 +182,7 @@ class MongoDb(AbstractDb):
         )
         return doc.get('itens', []) if doc else []
 
-    def find_cliente_por_pedido(self, order_id: str) -> Optional[Dict[str, Any]]:
+    def find_cliente_por_pedido(self, order_id: str) -> Dict[str, Any]:
         # implementação de "JOIN" 
         pipeline = [
             {"$match": {"_id": order_id}},
@@ -195,7 +196,7 @@ class MongoDb(AbstractDb):
             {"$replaceRoot": {"newRoot": "$cliente_info"}} # retorna só o cliente
         ]
         result = list(self.db.pedidos.aggregate(pipeline))
-        return _mongo_fix_id(result[0]) if result else None
+        return _mongo_fix_id(result[0])
 
     def get_top_10_clientes_por_pedidos(self) -> List[Dict[str, Any]]:
         # implementando "GROUP BY"
@@ -232,18 +233,16 @@ class CassandraDb(AbstractDb):
             self.conn.shutdown()
             print("cassandra desconectado.")
 
-    def read_cliente(self, cliente_id: str) -> Optional[Dict[str, Any]]:
+    def read_cliente(self, cliente_id: str) -> Dict[str, Any]:
         row = self.session.execute(
             "SELECT * FROM clientes WHERE cliente_id = %s", (cliente_id,)
         ).one()
-        if row:
-            return {
-                "id": row.cliente_id, 
-                "nome": row.nome,
-                "email": row.email,
-                "data_cadastro": row.data_cadastro
-            }
-        return None
+        return {
+            "id": row.cliente_id, 
+            "nome": row.nome,
+            "email": row.email,
+            "data_cadastro": row.data_cadastro
+        }
 
     def create_produto(self, product_data: ProductData) -> str:
         # limitação do cassandra. A ideia não é ter os dados separados, mas sim ter uma tabela
@@ -335,17 +334,14 @@ class CassandraDb(AbstractDb):
             "preco_unitario": row.preco_unitario
         } for row in rows]
 
-    def find_cliente_por_pedido(self, order_id: str) -> Optional[Dict[str, Any]]:
+    def find_cliente_por_pedido(self, order_id: str) -> Dict[str, Any]:
         # precisei de novo processar no python
         rows = self.session.execute("SELECT cliente_id, pedido_id FROM pedidos_por_cliente")
-        cliente_id_encontrado = None
+        cliente_id_encontrado = ""
         for row in rows:
             if row.pedido_id == order_id:
                 cliente_id_encontrado = row.cliente_id
                 break
-        
-        if not cliente_id_encontrado:
-            return None
         
         return self.read_cliente(cliente_id_encontrado)
 
@@ -379,9 +375,9 @@ class RedisDb(AbstractDb):
             self.conn.close()
             print("redis desconectado.")
 
-    def read_cliente(self, cliente_id: str) -> Optional[Dict[str, Any]]:
+    def read_cliente(self, cliente_id: str) -> Dict[str, Any]:
         data = self.conn.hgetall(f"cliente:{cliente_id}")
-        return _decode_redis_hash(data) if data else None
+        return _decode_redis_hash(data)
 
     def create_produto(self, product_data: ProductData) -> str:
         key = f"item:{product_data.id}"
@@ -448,12 +444,9 @@ class RedisDb(AbstractDb):
             })
         return itens
 
-    def find_cliente_por_pedido(self, order_id: str) -> Optional[Dict[str, Any]]:
+    def find_cliente_por_pedido(self, order_id: str) -> Dict[str, Any]:
         pedido_key = f"pedido:{order_id}"
         cliente_id_b = self.conn.hget(pedido_key, "cliente_id")
-        
-        if not cliente_id_b:
-            return None
         
         cliente_id = cliente_id_b.decode('utf-8')
         return self.read_cliente(cliente_id)
@@ -474,30 +467,30 @@ class RedisDb(AbstractDb):
 if __name__ == "__main__":
 
     postgress = PostgresDb()
-    postgress.connect()
     mongo = MongoDb()
-    mongo.connect()
     cassandra = CassandraDb()
-    cassandra.connect()
     redis_db = RedisDb()
-    redis_db.connect()
 
     for db in [postgress, mongo, cassandra, redis_db]:
         print(f"\n--- Testando {db.__class__.__name__} ---")
 
-        results = db.run_all_queries(
-            cliente_id="9613",
-            product_data=ProductData(id="9999999.0", nome="Produto Teste", valor=99.99),
-            order_id="10143.0",
-            status="Pago",
-            data_inicio=datetime(2023, 1, 1),
-            data_fim=datetime(2023, 12, 31)
-        )
+        db.connect()
 
-        with open(f"./results/results_{db.__class__.__name__}.json", "w") as f:
-            json.dump(results, f, default=str, indent=4)
+        try:
+            results = db.run_all_queries(
+                cliente_id="9613",
+                product_data=ProductData(id="9999999.0", nome="Produto Teste", valor=99.99),
+                order_id="10143.0",
+                status="Pago",
+                data_inicio=datetime(2023, 1, 1),
+                data_fim=datetime(2023, 12, 31)
+            )
 
-    postgress.close()
-    mongo.close()
-    cassandra.close()
-    redis_db.close()
+            with open(f"./results/results_{db.__class__.__name__}.json", "w") as f:
+                json.dump(results, f, default=str, indent=4)
+            print(f"fim. Tempo total: {results['total_time']:.4f}s")
+        except Exception as e:
+            print(f"erro --> {e}")
+            traceback.print_exc()
+        finally:
+            db.close()

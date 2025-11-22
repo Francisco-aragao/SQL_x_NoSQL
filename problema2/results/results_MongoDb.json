@@ -1,0 +1,4312 @@
+{
+    "results": {
+        "read_produto": {
+            "_id": "3017620422003",
+            "nome": "Nutella",
+            "marca": "Ferrero",
+            "categoria": "Spreads",
+            "data_atualizacao": "2017-08-31 07:41:38",
+            "nutrientes": {
+                "energia": 2284.0,
+                "gordura": 31.6,
+                "carboidratos": 57.6,
+                "proteinas": 6.0,
+                "fibras": 0.0,
+                "sodio": 0.0448818897637795
+            }
+        },
+        "create_produto": "9999999991",
+        "add_new_nutrient_vitamin_c": true,
+        "get_batch_products": [
+            {
+                "_id": "0000000018883",
+                "nome": "Dark Chocolate Sea Salt & Turbinado Almonds",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:35:20",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 35.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 7.5,
+                    "fibras": 7.5,
+                    "sodio": 0.65
+                }
+            },
+            {
+                "_id": "0011110017598",
+                "nome": "Party Pail Sherbet",
+                "marca": "The Kroger Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 20:11:25",
+                "nutrientes": {
+                    "energia": 590.0,
+                    "gordura": 0.0,
+                    "carboidratos": 32.94,
+                    "proteinas": 1.18,
+                    "fibras": 0.0,
+                    "sodio": 0.035
+                }
+            },
+            {
+                "_id": "9999999991",
+                "nome": "Produto Benchmark 2",
+                "marca": "MarcaX",
+                "categoria": "Snacks",
+                "nutrientes": {
+                    "energia": 500.0,
+                    "vitamina_c": 15.0
+                }
+            }
+        ],
+        "find_by_marca_and_nutriscore": [
+            {
+                "_id": "0009800000715",
+                "nome": "Rocher, Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:06:39",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800001064",
+                "nome": "Tic Tac",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:08",
+                "nutrientes": {
+                    "energia": 16.3,
+                    "gordura": 0.0,
+                    "carboidratos": 1.02,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0009800120307",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:09",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120314",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:15:23",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120338",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:06",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120352",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:06",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120369",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:07",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120475",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:08",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120659",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:06:39",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120949",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:15:52",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800120963",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:15",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800123018",
+                "nome": "Rocher, Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:14",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800124015",
+                "nome": "Rocher, Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:11",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800126071",
+                "nome": "Fine Hazelnut Chocolates",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:30:36",
+                "nutrientes": {
+                    "energia": 2423.0,
+                    "gordura": 42.11,
+                    "carboidratos": 44.74,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.053
+                }
+            },
+            {
+                "_id": "0009800126132",
+                "nome": "Rocher",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:02:42",
+                "nutrientes": {
+                    "energia": 2531.0,
+                    "gordura": 42.11,
+                    "carboidratos": 47.37,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.066
+                }
+            },
+            {
+                "_id": "0009800630110",
+                "nome": "Eggs Chocolate Covered Crispy Eggs, Hazelnut",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:18",
+                "nutrientes": {
+                    "energia": 2406.0,
+                    "gordura": 37.5,
+                    "carboidratos": 52.5,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.075
+                }
+            },
+            {
+                "_id": "0009800630127",
+                "nome": "Eggs Chocolate Covered Crispy Eggs, Cocoa",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:20",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 37.5,
+                    "carboidratos": 52.5,
+                    "proteinas": 5.0,
+                    "fibras": 5.0,
+                    "sodio": 0.038
+                }
+            },
+            {
+                "_id": "0009800800254",
+                "nome": "Nutella, Hazelnut Spread With Cocoa",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:13",
+                "nutrientes": {
+                    "energia": 2264.0,
+                    "gordura": 32.43,
+                    "carboidratos": 62.16,
+                    "proteinas": 5.41,
+                    "fibras": 2.7,
+                    "sodio": 0.041
+                }
+            },
+            {
+                "_id": "0009800802203",
+                "nome": "Nutella, Hazelnut Spread With Cocoa",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:51:18",
+                "nutrientes": {
+                    "energia": 2264.0,
+                    "gordura": 32.43,
+                    "carboidratos": 62.16,
+                    "proteinas": 5.41,
+                    "fibras": 2.7,
+                    "sodio": 0.041
+                }
+            },
+            {
+                "_id": "0009800892204",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-01-12 15:10:15",
+                "nutrientes": {
+                    "energia": 2260.0,
+                    "gordura": 32.4,
+                    "carboidratos": 56.8,
+                    "proteinas": 5.41,
+                    "fibras": 2.7,
+                    "sodio": 0.0405
+                }
+            },
+            {
+                "_id": "0009800895007",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Pates-a-tartiner-aux-noisettes-et-au-cacao",
+                "data_atualizacao": "2015-12-26 14:07:32",
+                "nutrientes": {
+                    "energia": 2260.0,
+                    "gordura": 32.4,
+                    "carboidratos": 56.8,
+                    "proteinas": 5.41,
+                    "fibras": 2.7,
+                    "sodio": 0.0405
+                }
+            },
+            {
+                "_id": "0062020000248",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-08-15 23:51:14",
+                "nutrientes": {
+                    "energia": 2226.0,
+                    "gordura": 30.4,
+                    "carboidratos": 58.4,
+                    "proteinas": 6.3,
+                    "sodio": 0.220472440944882
+                }
+            },
+            {
+                "_id": "0062020000743",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-04-29 14:18:43",
+                "nutrientes": {
+                    "energia": 2201.0,
+                    "gordura": 31.5792,
+                    "carboidratos": 57.8952,
+                    "proteinas": 5.2632,
+                    "fibras": 5.2632,
+                    "sodio": 0.0196850393700787
+                }
+            },
+            {
+                "_id": "00988639",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Pates-a-tartiner-aux-noisettes-et-au-cacao",
+                "data_atualizacao": "2015-12-26 14:16:40",
+                "nutrientes": {}
+            },
+            {
+                "_id": "01171969",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "it:Petit-dejeuners",
+                "data_atualizacao": "2015-12-26 14:25:57",
+                "nutrientes": {
+                    "energia": 2273.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.3,
+                    "proteinas": 6.0,
+                    "fibras": 3.4,
+                    "sodio": 0.037
+                }
+            },
+            {
+                "_id": "0222211686778",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-05-10 19:30:15",
+                "nutrientes": {}
+            },
+            {
+                "_id": "0789742896507",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-07-31 01:57:34",
+                "nutrientes": {
+                    "energia": 2280.0,
+                    "gordura": 33.3,
+                    "carboidratos": 55.6,
+                    "proteinas": 5.56,
+                    "fibras": 5.56,
+                    "sodio": 0.0556
+                }
+            },
+            {
+                "_id": "0789742897009",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-11-15 21:35:49",
+                "nutrientes": {}
+            },
+            {
+                "_id": "1041400811727",
+                "nome": "Mon ch\u00e9ri",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2016-04-06 07:29:13",
+                "nutrientes": {}
+            },
+            {
+                "_id": "11611059",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2015-12-26 14:00:57",
+                "nutrientes": {}
+            },
+            {
+                "_id": "18025211",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-03-26 18:58:18",
+                "nutrientes": {}
+            },
+            {
+                "_id": "2017626488103",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2016-03-12 10:45:47",
+                "nutrientes": {}
+            },
+            {
+                "_id": "20696900",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-07 11:16:59",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620401473",
+                "nome": "Nutella ",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-02-16 15:04:44",
+                "nutrientes": {
+                    "energia": 2278.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620401688",
+                "nome": "P\u00e2te \u00e0 tartiner",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-09-11 15:38:23",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620402135",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-07-13 11:13:10",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3017620402678",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-08-27 10:45:52",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3017620406003",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-09-04 11:58:46",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3017620420047",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-05-03 21:41:16",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620420078",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-05-17 15:05:47",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620421044",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-03-05 14:56:55",
+                "nutrientes": {
+                    "energia": 2278.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620422003",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-08-31 07:41:38",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620423055",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-01-24 07:01:53",
+                "nutrientes": {
+                    "energia": 2278.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620428005",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2015-12-26 14:06:01",
+                "nutrientes": {
+                    "energia": 2273.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.3,
+                    "proteinas": 6.0,
+                    "fibras": 3.4,
+                    "sodio": 0.037
+                }
+            },
+            {
+                "_id": "3017620428258",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-12-01 06:50:13",
+                "nutrientes": {}
+            },
+            {
+                "_id": "3017620429446",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-04-25 09:09:22",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620429484",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2017-09-17 18:37:54",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.6,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620445446",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-02-18 11:32:40",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "3017620690792",
+                "nome": "K. BUENO T15",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-02-13 15:43:37",
+                "nutrientes": {
+                    "energia": 2393.0,
+                    "proteinas": 8.6,
+                    "fibras": 0.0,
+                    "sodio": 0.107086614173228
+                }
+            },
+            {
+                "_id": "3017620691027",
+                "nome": "Kinder Bueno",
+                "marca": "Ferrero",
+                "categoria": "Waffles",
+                "data_atualizacao": "2017-05-16 13:03:28",
+                "nutrientes": {
+                    "energia": 2484.0,
+                    "gordura": 37.3,
+                    "carboidratos": 49.5,
+                    "proteinas": 8.6,
+                    "sodio": 0.107086614173228
+                }
+            },
+            {
+                "_id": "3017620721472",
+                "nome": "Kinder country",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-05-28 08:43:57",
+                "nutrientes": {
+                    "energia": 2347.0,
+                    "gordura": 33.8,
+                    "carboidratos": 54.9,
+                    "proteinas": 8.6,
+                    "sodio": 0.110236220472441
+                }
+            },
+            {
+                "_id": "3017621815002",
+                "nome": "Cloche Ferrero",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-07-30 15:00:29",
+                "nutrientes": {}
+            },
+            {
+                "_id": "3017624010701",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2015-12-26 14:12:44",
+                "nutrientes": {
+                    "energia": 2276.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.3,
+                    "proteinas": 6.0,
+                    "fibras": 3.4,
+                    "sodio": 0.037
+                }
+            },
+            {
+                "_id": "3017624044003",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2016-11-25 14:49:36",
+                "nutrientes": {
+                    "energia": 2273.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.3,
+                    "proteinas": 6.0,
+                    "fibras": 3.4,
+                    "sodio": 0.037
+                }
+            },
+            {
+                "_id": "3017625073309",
+                "nome": "Tic Tac Mint",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-05-04 20:28:02",
+                "nutrientes": {
+                    "energia": 1661.0,
+                    "gordura": 0.5,
+                    "carboidratos": 97.5,
+                    "proteinas": 0.1,
+                    "fibras": 0.0,
+                    "sodio": 0.0110236220472441
+                }
+            },
+            {
+                "_id": "3017627132509",
+                "nome": "Kinder Chocolat (format 32 b\u00e2tonnets)",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2015-11-11 19:08:24",
+                "nutrientes": {
+                    "energia": 2360.0,
+                    "gordura": 35.0,
+                    "carboidratos": 53.5,
+                    "proteinas": 8.7,
+                    "sodio": 0.123228346456693
+                }
+            },
+            {
+                "_id": "3038352455008",
+                "nome": "Graine de couscous moyenne",
+                "marca": "Ferrero",
+                "categoria": "fr:Graine-de-couscous",
+                "data_atualizacao": "2015-03-05 16:28:38",
+                "nutrientes": {
+                    "energia": 1563.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.0,
+                    "fibras": 3.4,
+                    "sodio": 0.02
+                }
+            },
+            {
+                "_id": "3038359000614",
+                "nome": "Graine de Couscous Fin (+ 25 % Gratuit)",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2016-09-06 18:08:42",
+                "nutrientes": {
+                    "energia": 1567.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3038359000638",
+                "nome": "Graine de Couscous Moyen 1,5 Kg Ferrero",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2014-05-12 18:45:11",
+                "nutrientes": {
+                    "energia": 1567.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0394
+                }
+            },
+            {
+                "_id": "3038359004995",
+                "nome": "Couscous aux \u00c9pices et Petits Raisins",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-07-02 09:46:15",
+                "nutrientes": {
+                    "energia": 1515.0,
+                    "gordura": 3.5,
+                    "carboidratos": 68.0,
+                    "proteinas": 12.0,
+                    "fibras": 5.0,
+                    "sodio": 0.62992125984252
+                }
+            },
+            {
+                "_id": "3038359005008",
+                "nome": "Couscous aux 4 \u00e9pices",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-06-24 06:42:49",
+                "nutrientes": {
+                    "energia": 1572.0,
+                    "gordura": 4.72,
+                    "carboidratos": 67.0,
+                    "proteinas": 13.0,
+                    "fibras": 4.7,
+                    "sodio": 0.433070866141732
+                }
+            },
+            {
+                "_id": "3223920000012",
+                "nome": "Polenta express",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-04-01 18:09:35",
+                "nutrientes": {
+                    "energia": 1477.0,
+                    "proteinas": 7.9,
+                    "fibras": 2.0,
+                    "sodio": 0.031496062992126
+                }
+            },
+            {
+                "_id": "3223920007004",
+                "nome": "Harissa",
+                "marca": "Ferrero",
+                "categoria": "Groceries",
+                "data_atualizacao": "2015-05-05 16:07:41",
+                "nutrientes": {
+                    "energia": 307.0,
+                    "gordura": 2.5,
+                    "carboidratos": 7.8,
+                    "proteinas": 3.0,
+                    "fibras": 3.8,
+                    "sodio": 1.0
+                }
+            },
+            {
+                "_id": "3223920620128",
+                "nome": "Graine de Couscous Moyen",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-04-03 16:25:30",
+                "nutrientes": {
+                    "energia": 1548.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0078740157480315
+                }
+            },
+            {
+                "_id": "3223920630134",
+                "nome": "Graine de Couscous Fin 1 Kg Ferrero",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2016-05-24 13:46:09",
+                "nutrientes": {
+                    "energia": 1563.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.0,
+                    "fibras": 3.4,
+                    "sodio": 0.02
+                }
+            },
+            {
+                "_id": "3223920700127",
+                "nome": "Couscous moyen",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-03-23 13:03:17",
+                "nutrientes": {
+                    "energia": 1548.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3223920710133",
+                "nome": "Graine de couscous fin",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2016-06-23 18:42:49",
+                "nutrientes": {
+                    "energia": 1567.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0078740157480315
+                }
+            },
+            {
+                "_id": "3223922910128",
+                "nome": "Graine de Couscous Moyen (+ 25 % Gratuit)",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2015-10-23 08:37:26",
+                "nutrientes": {
+                    "energia": 1567.0,
+                    "gordura": 2.0,
+                    "carboidratos": 73.0,
+                    "proteinas": 13.2,
+                    "fibras": 3.4,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "3492500056088",
+                "nome": "Nutella B-ready",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-06-28 13:34:03",
+                "nutrientes": {
+                    "energia": 2100.0,
+                    "gordura": 24.1,
+                    "carboidratos": 60.9,
+                    "proteinas": 8.3,
+                    "sodio": 0.239370078740157
+                }
+            },
+            {
+                "_id": "3660861018964",
+                "nome": "Grainde de couscous fin",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-09-10 18:03:45",
+                "nutrientes": {}
+            },
+            {
+                "_id": "3701077600038",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-21 20:48:23",
+                "nutrientes": {
+                    "energia": 2284.0,
+                    "proteinas": 6.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0448818897637795
+                }
+            },
+            {
+                "_id": "40024015",
+                "nome": "Duplo",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-09-18 16:02:31",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400102528",
+                "nome": "Mon Ch\u00e9ri",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-02-01 15:59:47",
+                "nutrientes": {
+                    "energia": 1902.0,
+                    "gordura": 20.3,
+                    "carboidratos": 52.8,
+                    "proteinas": 3.0,
+                    "sodio": 0.0019685039370078
+                }
+            },
+            {
+                "_id": "4008400133027",
+                "nome": "Die Besten von Ferrero",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2016-01-15 20:43:05",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400153322",
+                "nome": "Ferrero K\u00fcsschen",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-09-21 20:23:57",
+                "nutrientes": {
+                    "energia": 2614.0,
+                    "gordura": 47.3,
+                    "carboidratos": 40.3,
+                    "proteinas": 8.3,
+                    "sodio": 0.0590551181102362
+                }
+            },
+            {
+                "_id": "4008400159027",
+                "nome": "Ferrero K\u00fcsschen",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-06-22 18:32:30",
+                "nutrientes": {
+                    "energia": 2614.0,
+                    "gordura": 47.3,
+                    "carboidratos": 40.3,
+                    "proteinas": 8.3,
+                    "sodio": 0.0590551181102362
+                }
+            },
+            {
+                "_id": "4008400163826",
+                "nome": "Ferrero Rocher",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-03-01 16:51:35",
+                "nutrientes": {
+                    "energia": 2506.0,
+                    "gordura": 42.7,
+                    "carboidratos": 44.4,
+                    "proteinas": 8.2,
+                    "sodio": 0.0602362204724409
+                }
+            },
+            {
+                "_id": "4008400173825",
+                "nome": "Lapin Ferrero Rocher",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2015-04-06 09:20:41",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400180724",
+                "nome": "Raffaello",
+                "marca": "Ferrero",
+                "categoria": "Fats",
+                "data_atualizacao": "2017-06-12 14:07:37",
+                "nutrientes": {
+                    "energia": 2628.0,
+                    "gordura": 48.6,
+                    "carboidratos": 38.3,
+                    "proteinas": 7.2,
+                    "sodio": 0.12007874015748
+                }
+            },
+            {
+                "_id": "4008400183022",
+                "nome": "Raffaello",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-07-02 13:27:04",
+                "nutrientes": {
+                    "energia": 2606.0,
+                    "gordura": 48.6,
+                    "carboidratos": 38.3,
+                    "proteinas": 7.2,
+                    "sodio": 0.12007874015748
+                }
+            },
+            {
+                "_id": "4008400187327",
+                "nome": "Raffaello",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-07-23 09:19:34",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400230825",
+                "nome": "kinder maxi",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2015-04-09 20:53:25",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400290829",
+                "nome": "Kinder Pingui Chocolat",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-09-11 06:07:56",
+                "nutrientes": {
+                    "energia": 1873.0,
+                    "gordura": 29.7,
+                    "carboidratos": 37.8,
+                    "proteinas": 7.0,
+                    "sodio": 0.1
+                }
+            },
+            {
+                "_id": "4008400300825",
+                "nome": "Duplo big pack 18+2",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-04-03 10:32:24",
+                "nutrientes": {
+                    "energia": 2316.0,
+                    "gordura": 33.5,
+                    "carboidratos": 56.0,
+                    "proteinas": 6.1,
+                    "sodio": 0.0751968503937008
+                }
+            },
+            {
+                "_id": "4008400301020",
+                "nome": "duplo",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-03-18 15:06:04",
+                "nutrientes": {
+                    "energia": 2316.0,
+                    "gordura": 33.5,
+                    "carboidratos": 56.0,
+                    "proteinas": 6.1,
+                    "sodio": 0.0751968503937008
+                }
+            },
+            {
+                "_id": "4008400302829",
+                "nome": "Duplo",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-03-18 15:06:53",
+                "nutrientes": {
+                    "energia": 2316.0,
+                    "gordura": 33.5,
+                    "carboidratos": 56.0,
+                    "proteinas": 6.1,
+                    "sodio": 0.0751968503937008
+                }
+            },
+            {
+                "_id": "4008400360621",
+                "nome": "Die Besten Classic",
+                "marca": "Ferrero",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-05-03 12:00:25",
+                "nutrientes": {}
+            },
+            {
+                "_id": "4008400466422",
+                "nome": "Ferrero K\u00fcsschen Caramel 20er Geschenkverpackung",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-05-18 18:44:51",
+                "nutrientes": {
+                    "energia": 2611.0,
+                    "gordura": 41.1,
+                    "carboidratos": 47.6,
+                    "proteinas": 6.0,
+                    "sodio": 0.078740157480315
+                }
+            },
+            {
+                "_id": "4008400660622",
+                "nome": "Grand Ferrero Rocher",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-04-17 17:04:21",
+                "nutrientes": {
+                    "energia": 2506.0,
+                    "gordura": 42.7,
+                    "carboidratos": 44.4,
+                    "proteinas": 8.2,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "4008400828121",
+                "nome": "Kinder maxi",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-02-19 18:34:00",
+                "nutrientes": {
+                    "energia": 2360.0,
+                    "gordura": 35.0,
+                    "carboidratos": 53.5,
+                    "proteinas": 8.7,
+                    "sodio": 0.123228346456693
+                }
+            },
+            {
+                "_id": "40084015",
+                "nome": "Duplo",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-11-10 19:07:39",
+                "nutrientes": {
+                    "energia": 2316.0,
+                    "gordura": 33.5,
+                    "carboidratos": 56.0,
+                    "proteinas": 6.1,
+                    "sodio": 0.0751968503937008
+                }
+            },
+            {
+                "_id": "40084701",
+                "nome": "Kinder Chocolate",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-02-07 19:27:15",
+                "nutrientes": {
+                    "energia": 2360.0,
+                    "gordura": 35.0,
+                    "carboidratos": 53.5,
+                    "proteinas": 8.7,
+                    "fibras": 0.9,
+                    "sodio": 0.123228346456693
+                }
+            },
+            {
+                "_id": "5020411121182",
+                "nome": "Nutella & Go!",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-08-17 06:11:33",
+                "nutrientes": {
+                    "energia": 2140.0,
+                    "gordura": 25.4,
+                    "carboidratos": 62.1,
+                    "proteinas": 7.29,
+                    "sodio": 0.272
+                }
+            },
+            {
+                "_id": "5020411123056",
+                "nome": "Kinder Chocolate Mini",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-04-12 18:32:38",
+                "nutrientes": {
+                    "energia": 2360.0,
+                    "gordura": 35.0,
+                    "carboidratos": 53.5,
+                    "proteinas": 8.7,
+                    "sodio": 0.123228346456693
+                }
+            },
+            {
+                "_id": "5413548020549",
+                "nome": "Kinder Surprise (x6) de No\u00ebl",
+                "marca": "Ferrero",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-02-16 15:04:01",
+                "nutrientes": {
+                    "energia": 2310.0,
+                    "gordura": 34.2,
+                    "carboidratos": 52.3,
+                    "proteinas": 8.1,
+                    "sodio": 0.125984251968504
+                }
+            },
+            {
+                "_id": "5413548040592",
+                "nome": "Raffaello",
+                "marca": "Ferrero",
+                "categoria": "Waffles",
+                "data_atualizacao": "2016-01-05 14:08:08",
+                "nutrientes": {
+                    "energia": 2607.0,
+                    "gordura": 48.6,
+                    "carboidratos": 38.3,
+                    "proteinas": 7.5,
+                    "sodio": 0.12007874015748
+                }
+            },
+            {
+                "_id": "59027904",
+                "nome": "Nutella",
+                "marca": "Ferrero",
+                "categoria": "Spreads",
+                "data_atualizacao": "2015-12-26 14:04:33",
+                "nutrientes": {
+                    "energia": 2273.0,
+                    "gordura": 31.6,
+                    "carboidratos": 57.3,
+                    "proteinas": 6.0,
+                    "fibras": 3.4,
+                    "sodio": 0.037
+                }
+            },
+            {
+                "_id": "5905408022010",
+                "nome": "Kinder Bueno",
+                "marca": "Ferrero",
+                "categoria": "Waffles",
+                "data_atualizacao": "2016-04-12 16:36:34",
+                "nutrientes": {
+                    "energia": 2368.0,
+                    "gordura": 37.3,
+                    "carboidratos": 49.5,
+                    "proteinas": 8.6,
+                    "sodio": 0.107
+                }
+            },
+            {
+                "_id": "7861002901831",
+                "nome": "Tic tac 100",
+                "marca": "Ferrero",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-01-15 21:34:15",
+                "nutrientes": {}
+            },
+            {
+                "_id": "8000500003787",
+                "nome": "Ferrero Rocher",
+                "marca": "Ferrero",
+                "categoria": "Waffles",
+                "data_atualizacao": "2017-03-18 15:17:03",
+                "nutrientes": {
+                    "energia": 2506.0,
+                    "gordura": 42.7,
+                    "carboidratos": 44.4,
+                    "proteinas": 8.2,
+                    "sodio": 0.0602362204724409
+                }
+            }
+        ],
+        "find_by_energia_range": [
+            {
+                "_id": "0000000056434",
+                "nome": "diet lemonade by Sainsbury's",
+                "marca": "Gen\u00e9rico",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-07-08 19:16:12",
+                "nutrientes": {
+                    "energia": 5.0
+                }
+            },
+            {
+                "_id": "0000000069601",
+                "nome": "Fresh Organic Carrots",
+                "marca": "Bunny-Luv",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:35:35",
+                "nutrientes": {
+                    "energia": 159.0,
+                    "gordura": 0.0,
+                    "carboidratos": 8.97,
+                    "proteinas": 1.28,
+                    "fibras": 2.6,
+                    "sodio": 0.077
+                }
+            },
+            {
+                "_id": "0000010068175",
+                "nome": "Th\u00e9 noir aromatis\u00e9 violette et fleurs",
+                "marca": "Alice D\u00e9lice",
+                "categoria": "Beverages",
+                "data_atualizacao": "2017-07-03 21:39:13",
+                "nutrientes": {
+                    "energia": 17.0,
+                    "gordura": 0.1,
+                    "carboidratos": 0.1,
+                    "proteinas": 0.1,
+                    "sodio": 0.0003937007874015
+                }
+            },
+            {
+                "_id": "0000040608754",
+                "nome": "Pepsi, Nouveau go\u00fbt !",
+                "marca": "Pepsi",
+                "categoria": "Beverages",
+                "data_atualizacao": "2015-08-09 17:35:31",
+                "nutrientes": {
+                    "energia": 177.0,
+                    "gordura": 0.0,
+                    "carboidratos": 10.4,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.01
+                }
+            },
+            {
+                "_id": "0000050413201",
+                "nome": "Naturally Flavored Beverage Enhancer With Other Natural Flavors",
+                "marca": "Easter Unlimited Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:25:07",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.938
+                }
+            },
+            {
+                "_id": "0000054491472",
+                "nome": "Coca Cola",
+                "marca": "Gen\u00e9rico",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-07-07 12:34:16",
+                "nutrientes": {
+                    "energia": 180.0
+                }
+            },
+            {
+                "_id": "0000054491496",
+                "nome": "Diet Coke",
+                "marca": "Gen\u00e9rico",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-07-25 13:56:33",
+                "nutrientes": {
+                    "energia": 1.0
+                }
+            },
+            {
+                "_id": "0000054492790",
+                "nome": "Blle Pet 50CL Coca Cola Cherry",
+                "marca": "Coca-Cola",
+                "categoria": "Beverages",
+                "data_atualizacao": "2017-06-26 11:47:54",
+                "nutrientes": {
+                    "energia": 180.0,
+                    "gordura": 0.1,
+                    "carboidratos": 10.7,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00000758",
+                "nome": "Cauliflower",
+                "marca": "Sainsbury's",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2015-02-23 10:38:56",
+                "nutrientes": {
+                    "energia": 144.0,
+                    "gordura": 0.9,
+                    "carboidratos": 2.9,
+                    "proteinas": 3.6,
+                    "fibras": 1.8,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000087177756",
+                "nome": "7Up",
+                "marca": "7Up",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2015-06-06 11:13:26",
+                "nutrientes": {
+                    "energia": 177.0,
+                    "gordura": 0.0,
+                    "carboidratos": 10.4,
+                    "proteinas": 0.0,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "0000105000011",
+                "nome": "Chamomile Herbal Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:50",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 70.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.3
+                }
+            },
+            {
+                "_id": "0000105000042",
+                "nome": "Herbal Tea, Peppermint",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 1.47,
+                    "proteinas": 0.0,
+                    "sodio": 0.004
+                }
+            },
+            {
+                "_id": "0000105000059",
+                "nome": "Linden Flowers Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 53.33,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105000196",
+                "nome": "Apple & Cinnamon Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 21:56:11",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 60.0,
+                    "proteinas": 66.67,
+                    "sodio": 0.133
+                }
+            },
+            {
+                "_id": "0000105000219",
+                "nome": "Green Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:50",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 2.67,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105000318",
+                "nome": "Shave Grass Herbal Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105000356",
+                "nome": "Herbal Tea, Chamomile * Mint",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105000363",
+                "nome": "Artichoke Herbal Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105000417",
+                "nome": "Dieter's Herbal Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105200923",
+                "nome": "Kidneytea, Herbal Tea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:50",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000105200961",
+                "nome": "Bronchtea",
+                "marca": "Lagg's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:28:50",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 100.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000208066259",
+                "nome": "Black Tea",
+                "marca": "Tetley",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:56",
+                "nutrientes": {
+                    "energia": 4.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.3,
+                    "proteinas": 0.0
+                }
+            },
+            {
+                "_id": "00006163",
+                "nome": "Cornichons",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:14:21",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.214
+                }
+            },
+            {
+                "_id": "0000651003214",
+                "nome": "Romaine Hearts",
+                "marca": "Ocean Mist Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:59:40",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.53,
+                    "proteinas": 1.18,
+                    "fibras": 2.4,
+                    "sodio": 0.006
+                }
+            },
+            {
+                "_id": "0000651041001",
+                "nome": "Romaine",
+                "marca": "Ocean Mist Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:59:40",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.53,
+                    "proteinas": 1.18,
+                    "fibras": 2.4,
+                    "sodio": 0.006
+                }
+            },
+            {
+                "_id": "0000651041025",
+                "nome": "Green Leaf Lettuce",
+                "marca": "Ocean Mist Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:59:41",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 2.35,
+                    "proteinas": 1.18,
+                    "fibras": 1.2,
+                    "sodio": 0.041
+                }
+            },
+            {
+                "_id": "0000651213019",
+                "nome": "Fresh Spinach",
+                "marca": "Cean Mist Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:18:25",
+                "nutrientes": {
+                    "energia": 100.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.53,
+                    "proteinas": 2.35,
+                    "fibras": 2.4,
+                    "sodio": 0.076
+                }
+            },
+            {
+                "_id": "0000651213026",
+                "nome": "Cooking Spinach",
+                "marca": "Ocean Mist",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 20:11:19",
+                "nutrientes": {
+                    "energia": 100.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.53,
+                    "proteinas": 2.35,
+                    "fibras": 2.4,
+                    "sodio": 0.076
+                }
+            },
+            {
+                "_id": "0000651319018",
+                "nome": "Quick Cook Sprout Halves",
+                "marca": "Ocean Mist Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:04:55",
+                "nutrientes": {
+                    "energia": 176.0,
+                    "gordura": 0.0,
+                    "carboidratos": 9.52,
+                    "proteinas": 3.57,
+                    "fibras": 3.6,
+                    "sodio": 0.024
+                }
+            },
+            {
+                "_id": "0000651511016",
+                "nome": "Celery",
+                "marca": "Ocean Mist",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 20:11:19",
+                "nutrientes": {
+                    "energia": 59.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.64,
+                    "proteinas": 0.0,
+                    "fibras": 1.8,
+                    "sodio": 0.105
+                }
+            },
+            {
+                "_id": "0000764001770",
+                "nome": "Ryan's, Juice Melange, Fuji Pom Blend",
+                "marca": "Ryan Orchards",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 192.0,
+                    "gordura": 0.0,
+                    "carboidratos": 11.67,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.015
+                }
+            },
+            {
+                "_id": "0000764003033",
+                "nome": "Ryan's, Spiced Apple Cider",
+                "marca": "Ryan Orchards",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:11",
+                "nutrientes": {
+                    "energia": 192.0,
+                    "gordura": 0.0,
+                    "carboidratos": 11.25,
+                    "proteinas": 0.0,
+                    "fibras": 0.4,
+                    "sodio": 0.01
+                }
+            },
+            {
+                "_id": "0000764003040",
+                "nome": "Ryan's, Pink Lady, Apple Cider",
+                "marca": "Ryan Orchards",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:40:01",
+                "nutrientes": {
+                    "energia": 192.0,
+                    "gordura": 0.0,
+                    "carboidratos": 11.67,
+                    "proteinas": 0.42,
+                    "fibras": 0.0,
+                    "sodio": 0.006
+                }
+            },
+            {
+                "_id": "0000764114944",
+                "nome": "Ryan's, Organic Juice, Apple",
+                "marca": "Ryan Orchards",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:10:10",
+                "nutrientes": {
+                    "energia": 192.0,
+                    "gordura": 0.0,
+                    "carboidratos": 11.67,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.017
+                }
+            },
+            {
+                "_id": "0000764708617",
+                "nome": "Ryan's, Opal Blend Melange, Apple Cider",
+                "marca": "Ryan Orchards",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 192.0,
+                    "gordura": 0.0,
+                    "carboidratos": 11.67,
+                    "proteinas": 0.42,
+                    "fibras": 0.0,
+                    "sodio": 0.006
+                }
+            },
+            {
+                "_id": "0000901005005",
+                "nome": "Guiltless Gourmet, Organic Unsweetened Coconut Water",
+                "marca": "Guiltless Gourmet Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 21:08:58",
+                "nutrientes": {
+                    "energia": 71.0,
+                    "gordura": 0.0,
+                    "carboidratos": 4.0,
+                    "proteinas": 0.4,
+                    "fibras": 1.0,
+                    "sodio": 0.011
+                }
+            },
+            {
+                "_id": "0000974300144",
+                "nome": "Caperberries In Vinegar",
+                "marca": "La Pedriza",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:51:09",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.464
+                }
+            },
+            {
+                "_id": "00010894",
+                "nome": "Diced In Tomato Juice",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:15:53",
+                "nutrientes": {
+                    "energia": 79.0,
+                    "gordura": 0.0,
+                    "carboidratos": 4.62,
+                    "proteinas": 0.77,
+                    "fibras": 0.8,
+                    "sodio": 0.223
+                }
+            },
+            {
+                "_id": "00015165",
+                "nome": "Traders Joe's, Baking Powder",
+                "marca": "Legacy Manufacturing Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:55:47",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 9.167
+                }
+            },
+            {
+                "_id": "00015356",
+                "nome": "Salsa Autentica",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:14:34",
+                "nutrientes": {
+                    "energia": 138.0,
+                    "gordura": 0.0,
+                    "carboidratos": 6.67,
+                    "proteinas": 0.0,
+                    "sodio": 0.867
+                }
+            },
+            {
+                "_id": "00015905",
+                "nome": "First Crush, Unsweetened Gravenstein Apple Sauce",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:15:58",
+                "nutrientes": {
+                    "energia": 172.0,
+                    "gordura": 0.0,
+                    "carboidratos": 10.66,
+                    "proteinas": 0.0,
+                    "fibras": 1.6,
+                    "sodio": 0.004
+                }
+            },
+            {
+                "_id": "00016571910303",
+                "nome": "Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talking Rain Beverage Co.  Inc",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:57",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571910310",
+                "nome": "Kevin Durant Kd 35 Limited Edition, Naturally Flavored Sparkling Water",
+                "marca": "Talkingrain Beverage Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:55",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571940331",
+                "nome": "Coconut Pineapple Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talking Rain Beverage Co.  Inc",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:56",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571940348",
+                "nome": "Peach Nectarine Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talkingrain Beverage Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:57",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571950293",
+                "nome": "Lemonade, Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talking Rain Beverage Co.  Inc",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:56",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571950316",
+                "nome": "Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talking Rain Beverage Co.  Inc",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:55",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00016571950842",
+                "nome": "Naturally Flavored Sparkling Mountain Spring Water",
+                "marca": "Talking Rain Beverage Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:43:55",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00018210",
+                "nome": "Carrot & Coriander soup",
+                "marca": "Gen\u00e9rico",
+                "categoria": "Carrot-coriander-soup",
+                "data_atualizacao": "2015-11-26 10:12:34",
+                "nutrientes": {
+                    "energia": 126.0,
+                    "gordura": 1.4,
+                    "carboidratos": 3.6,
+                    "proteinas": 0.3,
+                    "fibras": 1.0,
+                    "sodio": 0.248031496062992
+                }
+            },
+            {
+                "_id": "0002124810206",
+                "nome": "Mediterranean Sea Salt",
+                "marca": "Olde Thompson",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 20:14:30",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 41.667
+                }
+            },
+            {
+                "_id": "00024463061071",
+                "nome": "Chili Garlic Sauce",
+                "marca": "Huy Fong Foods  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:16:32",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 1.9
+                }
+            },
+            {
+                "_id": "00030014",
+                "nome": "Apple, Coconut Water, Cucumber, Spinach",
+                "marca": "M&S",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-07-15 11:49:35",
+                "nutrientes": {
+                    "energia": 146.0,
+                    "gordura": 0.1,
+                    "carboidratos": 8.3,
+                    "proteinas": 0.1,
+                    "fibras": 0.2,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "00030045",
+                "nome": "M&S Iced Tea Spanish Peach",
+                "marca": "Mark & Spencer",
+                "categoria": "Beverages",
+                "data_atualizacao": "2017-06-12 10:37:14",
+                "nutrientes": {
+                    "energia": 130.0,
+                    "gordura": 0.1,
+                    "carboidratos": 7.6,
+                    "proteinas": 0.2,
+                    "fibras": 0.1,
+                    "sodio": 0.0118110236220472
+                }
+            },
+            {
+                "_id": "00031200029997",
+                "nome": "100% Grapefruit",
+                "marca": "Ocean Spray",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:20:17",
+                "nutrientes": {
+                    "energia": 151.0,
+                    "gordura": 0.0,
+                    "carboidratos": 8.37,
+                    "proteinas": 0.8,
+                    "sodio": 0.008
+                }
+            },
+            {
+                "_id": "00031858",
+                "nome": "Pur Soup' Velout\u00e9 de l\u00e9gumes",
+                "marca": "Liebig",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2015-11-28 08:40:09",
+                "nutrientes": {
+                    "energia": 188.0,
+                    "gordura": 2.1,
+                    "carboidratos": 5.3,
+                    "proteinas": 0.8,
+                    "fibras": 0.8,
+                    "sodio": 0.295275590551181
+                }
+            },
+            {
+                "_id": "00040235",
+                "nome": "Baking Soda",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:22:34",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 26.667
+                }
+            },
+            {
+                "_id": "00050678",
+                "nome": "Diet Sparkling Fiery Ginger Beer",
+                "marca": "Marks & Spencer",
+                "categoria": "Beverages",
+                "data_atualizacao": "2017-08-24 11:32:58",
+                "nutrientes": {
+                    "energia": 4.0,
+                    "gordura": 0.1,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.1,
+                    "fibras": 0.1,
+                    "sodio": 0.031496062992126
+                }
+            },
+            {
+                "_id": "00066020",
+                "nome": "Pineapple Salsa",
+                "marca": "Trader's Joe",
+                "categoria": "Outros",
+                "data_atualizacao": "2015-08-27 11:31:53",
+                "nutrientes": {
+                    "energia": 140.0,
+                    "gordura": 0.0,
+                    "carboidratos": 6.67,
+                    "proteinas": 0.0,
+                    "sodio": 0.367
+                }
+            },
+            {
+                "_id": "00067867",
+                "nome": "Natural Mountain Spring Water",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:55:36",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00071543",
+                "nome": "Aloe Vera Grape & Apple Juice",
+                "marca": "M&S",
+                "categoria": "Plant-based foods and beverages",
+                "data_atualizacao": "2017-07-14 18:16:50",
+                "nutrientes": {
+                    "energia": 155.0,
+                    "proteinas": 0.1,
+                    "fibras": 0.1,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "00072457990227",
+                "nome": "Fruit Spredad, Strawberry",
+                "marca": "Walden Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:21:39",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00072457990333",
+                "nome": "Fruit Spread, Raspberry",
+                "marca": "Walden Farms",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:21:51",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00073214001347",
+                "nome": "Deli-Sliced Hot Jalapeno Peppers",
+                "marca": "Mezzetta",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:21:49",
+                "nutrientes": {
+                    "energia": 71.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 1.267
+                }
+            },
+            {
+                "_id": "00073448",
+                "nome": "21 Seasoning Salute",
+                "marca": "Trader Joe's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:22:30",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0008274000061",
+                "nome": "Ginger Ale, Original Brew",
+                "marca": "Reed's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 11:05:57",
+                "nutrientes": {
+                    "energia": 155.0,
+                    "gordura": 0.0,
+                    "carboidratos": 9.3,
+                    "proteinas": 0.0,
+                    "sodio": 0.001
+                }
+            },
+            {
+                "_id": "0008274000092",
+                "nome": "Reed's, Ginger Ale, Premium Brew",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:42:37",
+                "nutrientes": {
+                    "energia": 155.0,
+                    "gordura": 0.0,
+                    "carboidratos": 9.3,
+                    "proteinas": 0.0,
+                    "sodio": 0.001
+                }
+            },
+            {
+                "_id": "0008274000498",
+                "nome": "Reed's, Culture Club Kombucha, Coffee",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:10:11",
+                "nutrientes": {
+                    "energia": 71.0,
+                    "gordura": 0.0,
+                    "carboidratos": 4.23,
+                    "proteinas": 0.0,
+                    "sodio": 4.23
+                }
+            },
+            {
+                "_id": "0008274000511",
+                "nome": "Reed's, Kombucha, Lemon Ginger Raspberry",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:33:22",
+                "nutrientes": {
+                    "energia": 88.0,
+                    "gordura": 0.0,
+                    "carboidratos": 5.07,
+                    "proteinas": 0.0,
+                    "sodio": 4.23
+                }
+            },
+            {
+                "_id": "0008274000528",
+                "nome": "Reed's, Culture Club Kombucha, Hibicus Ginger Grapfruit",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:33:23",
+                "nutrientes": {
+                    "energia": 88.0,
+                    "gordura": 0.0,
+                    "carboidratos": 5.07,
+                    "proteinas": 0.0,
+                    "sodio": 0.004
+                }
+            },
+            {
+                "_id": "0008274000535",
+                "nome": "Culture Club Kombucha",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:33:49",
+                "nutrientes": {
+                    "energia": 88.0,
+                    "gordura": 0.0,
+                    "carboidratos": 5.07,
+                    "proteinas": 0.0,
+                    "sodio": 0.004
+                }
+            },
+            {
+                "_id": "0008274000542",
+                "nome": "Culture Club Kombucha",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:33:23",
+                "nutrientes": {
+                    "energia": 88.0,
+                    "gordura": 0.0,
+                    "carboidratos": 5.07,
+                    "proteinas": 0.0,
+                    "sodio": 0.004
+                }
+            },
+            {
+                "_id": "0008274111118",
+                "nome": "Reed's, Ginger Ale, Original Brew",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:32:00",
+                "nutrientes": {
+                    "energia": 172.0,
+                    "gordura": 0.0,
+                    "carboidratos": 10.54,
+                    "proteinas": 0.0,
+                    "sodio": 0.001
+                }
+            },
+            {
+                "_id": "0008274130003",
+                "nome": "Reed's, Light Ginger Ale, Extra Brew",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:36:25",
+                "nutrientes": {
+                    "energia": 63.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.94,
+                    "proteinas": 0.0,
+                    "sodio": 0.001
+                }
+            },
+            {
+                "_id": "0008274333336",
+                "nome": "Reed's, Ginger Ale, Premium Brew",
+                "marca": "Reed's  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 17:15:37",
+                "nutrientes": {
+                    "energia": 155.0,
+                    "gordura": 0.0,
+                    "carboidratos": 9.3,
+                    "proteinas": 0.0,
+                    "sodio": 0.001
+                }
+            },
+            {
+                "_id": "0008295616241",
+                "nome": "Balsamic vinegar of Modena",
+                "marca": "De Nigris",
+                "categoria": "it:Vinaigre-balsamique",
+                "data_atualizacao": "2015-08-09 17:35:55",
+                "nutrientes": {
+                    "energia": 63.0,
+                    "gordura": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0008295663764",
+                "nome": "Organic Apple Cider Vinegar",
+                "marca": "Acetificio M De Nigris Srl",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 21:08:44",
+                "nutrientes": {
+                    "energia": 84.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00084512",
+                "nome": "Roasted Garlic Salsa, Roasted Garlic",
+                "marca": "Trader Jose's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:14:36",
+                "nutrientes": {
+                    "energia": 138.0,
+                    "gordura": 0.0,
+                    "carboidratos": 10.0,
+                    "proteinas": 0.0,
+                    "fibras": 3.3,
+                    "sodio": 0.317
+                }
+            },
+            {
+                "_id": "0008497123400",
+                "nome": "Special Blend Taco Sauce",
+                "marca": "Art's Mexican Products",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:49:41",
+                "nutrientes": {
+                    "energia": 138.0,
+                    "gordura": 0.0,
+                    "carboidratos": 6.67,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.467
+                }
+            },
+            {
+                "_id": "00088893",
+                "nome": "Beetroot juice",
+                "marca": "M & S",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-08-31 13:49:29",
+                "nutrientes": {
+                    "energia": 163.0,
+                    "gordura": 0.1,
+                    "carboidratos": 8.6,
+                    "proteinas": 1.2,
+                    "fibras": 0.1,
+                    "sodio": 0.0393700787401575
+                }
+            },
+            {
+                "_id": "00088909",
+                "nome": "Pressed carrot juice",
+                "marca": "Mark Et Spencer",
+                "categoria": "Beverages",
+                "data_atualizacao": "2017-07-16 17:24:10",
+                "nutrientes": {
+                    "energia": 88.0,
+                    "gordura": 0.1,
+                    "carboidratos": 4.4,
+                    "proteinas": 0.7,
+                    "fibras": 0.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00089555",
+                "nome": "Agua Fresca Watermelon & Lime",
+                "marca": "M&S",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-05-31 11:35:09",
+                "nutrientes": {
+                    "energia": 117.0,
+                    "gordura": 0.1,
+                    "carboidratos": 6.1,
+                    "proteinas": 0.4,
+                    "fibras": 0.3,
+                    "sodio": 0.0039370078740157
+                }
+            },
+            {
+                "_id": "00090339",
+                "nome": "Chunky Salsa",
+                "marca": "Trader Jose's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:14:36",
+                "nutrientes": {
+                    "energia": 71.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.33,
+                    "proteinas": 0.0,
+                    "fibras": 0.0,
+                    "sodio": 0.667
+                }
+            },
+            {
+                "_id": "00090780",
+                "nome": "Spaghetti sauce with mushrooms",
+                "marca": "Trader Giotto's",
+                "categoria": "Groceries",
+                "data_atualizacao": "2017-03-09 12:15:56",
+                "nutrientes": {
+                    "energia": 162.0,
+                    "gordura": 0.0,
+                    "carboidratos": 8.62,
+                    "proteinas": 1.72,
+                    "fibras": 1.72,
+                    "sodio": 0.319
+                }
+            },
+            {
+                "_id": "0009300000109",
+                "nome": "Dill Relish",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:57:54",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 1.067
+                }
+            },
+            {
+                "_id": "0009300000116",
+                "nome": "Jalapeno Slices",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:03:46",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.607
+                }
+            },
+            {
+                "_id": "0009300000161",
+                "nome": "Sliced Jalapeno Peppers",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:57:52",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 0.0,
+                    "proteinas": 0.0,
+                    "sodio": 1.667
+                }
+            },
+            {
+                "_id": "0009300000314",
+                "nome": "Squeeze Sweet Relish",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:04:10",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 6.67,
+                    "proteinas": 0.0,
+                    "sodio": 0.5
+                }
+            },
+            {
+                "_id": "0009300000383",
+                "nome": "Hamburger Dill Chips",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:58:01",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.036
+                }
+            },
+            {
+                "_id": "0009300000550",
+                "nome": "Baby Dills",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:39:41",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000635",
+                "nome": "Sandwich Stuffers Kosher Dill",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:57:47",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000659",
+                "nome": "Hamburger Dill Chips",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:58:04",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.036
+                }
+            },
+            {
+                "_id": "0009300000697",
+                "nome": "Dills",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:04:11",
+                "nutrientes": {
+                    "energia": 0.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.036
+                }
+            },
+            {
+                "_id": "0009300000741",
+                "nome": "Kosher Hamburger Dill Chips",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:24:28",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.946
+                }
+            },
+            {
+                "_id": "0009300000765",
+                "nome": "Kosher Dill Spears",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:04:16",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000802",
+                "nome": "Kosher Dill Spears",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 11:58:03",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000826",
+                "nome": "Kosher Dills",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:03:20",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000857",
+                "nome": "Kosher Baby Dills",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:04:16",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000864",
+                "nome": "Kosher Dills",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:04:16",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000888",
+                "nome": "Kosher Dill Spears",
+                "marca": "Mt. Olive",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 09:54:22",
+                "nutrientes": {
+                    "energia": 75.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 0.929
+                }
+            },
+            {
+                "_id": "0009300000895",
+                "nome": "Pepperoncini",
+                "marca": "Mt. Olive Pickle Company  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:03:44",
+                "nutrientes": {
+                    "energia": 151.0,
+                    "gordura": 0.0,
+                    "carboidratos": 3.57,
+                    "proteinas": 0.0,
+                    "sodio": 1.607
+                }
+            }
+        ],
+        "find_products_with_calcium": [],
+        "search_by_name": [
+            {
+                "_id": "0000000016193",
+                "nome": "Organic Dark Chocolate Minis",
+                "marca": "Equal Exchange",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:34:11",
+                "nutrientes": {
+                    "energia": 2406.0,
+                    "gordura": 37.5,
+                    "carboidratos": 55.0,
+                    "proteinas": 5.0,
+                    "fibras": 7.5
+                }
+            },
+            {
+                "_id": "0000000018289",
+                "nome": "Antioxidant Mix - Berries & Chocolate",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:34:15",
+                "nutrientes": {
+                    "energia": 2092.0,
+                    "gordura": 33.33,
+                    "carboidratos": 46.67,
+                    "proteinas": 13.33,
+                    "fibras": 6.7,
+                    "sodio": 0.183
+                }
+            },
+            {
+                "_id": "0000000018500",
+                "nome": "Dark Chocolate Coconut Chews",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:34:10",
+                "nutrientes": {
+                    "energia": 2092.0,
+                    "gordura": 35.0,
+                    "carboidratos": 52.5,
+                    "proteinas": 5.0,
+                    "fibras": 7.5,
+                    "sodio": 0.05
+                }
+            },
+            {
+                "_id": "0000000018883",
+                "nome": "Dark Chocolate Sea Salt & Turbinado Almonds",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:35:20",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 35.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 7.5,
+                    "fibras": 7.5,
+                    "sodio": 0.65
+                }
+            },
+            {
+                "_id": "0000000036153",
+                "nome": "Chocolate Nut Crunch",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:34:14",
+                "nutrientes": {
+                    "energia": 1954.0,
+                    "gordura": 26.67,
+                    "carboidratos": 53.33,
+                    "proteinas": 10.0,
+                    "fibras": 6.7,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "0000000036269",
+                "nome": "Milk Chocolate Peanut Butter Malt Balls",
+                "marca": "Sunridge",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:34:11",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 27.5,
+                    "carboidratos": 60.0,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.038
+                }
+            },
+            {
+                "_id": "0000000045483",
+                "nome": "Milk Chocolate Pretzels",
+                "marca": "Torn & Glasser",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 09:07:04",
+                "nutrientes": {
+                    "energia": 1883.0,
+                    "gordura": 22.5,
+                    "carboidratos": 70.0,
+                    "proteinas": 5.0,
+                    "fibras": 2.5,
+                    "sodio": 0.4
+                }
+            },
+            {
+                "_id": "0000000050913",
+                "nome": "M&S Extrenely Chocolatey Milk, Dark & White Chocolate Biscuits",
+                "marca": "Gen\u00e9rico",
+                "categoria": "Outros",
+                "data_atualizacao": "2016-12-31 12:18:28",
+                "nutrientes": {
+                    "energia": 2179.0
+                }
+            },
+            {
+                "_id": "0000010179413",
+                "nome": "Preparation mug cake chocolat-caramel au beurre sal\u00e9",
+                "marca": "Alice D\u00e9lice",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-09-06 14:20:51",
+                "nutrientes": {
+                    "energia": 1632.0,
+                    "gordura": 7.0,
+                    "carboidratos": 70.0,
+                    "proteinas": 7.0,
+                    "fibras": 0.0,
+                    "sodio": 0.383858267716535
+                }
+            },
+            {
+                "_id": "0000020048402",
+                "nome": "Freshly Baked Chocolat Croissant",
+                "marca": "Fresh & Easy",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 20:50:57",
+                "nutrientes": {
+                    "energia": 1812.0,
+                    "gordura": 23.33,
+                    "carboidratos": 45.0,
+                    "proteinas": 8.33,
+                    "fibras": 1.7,
+                    "sodio": 0.417
+                }
+            },
+            {
+                "_id": "000002046231",
+                "nome": "Chocolate Scone",
+                "marca": "Fresh & Easy",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:18:25",
+                "nutrientes": {
+                    "energia": 2912.0,
+                    "gordura": 39.29,
+                    "carboidratos": 80.36,
+                    "proteinas": 5.36,
+                    "fibras": 3.6,
+                    "sodio": 0.25
+                }
+            },
+            {
+                "_id": "0000159479269",
+                "nome": "Magic Stars Chocolates",
+                "marca": "Milkyway",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:56",
+                "nutrientes": {
+                    "energia": 2330.0,
+                    "gordura": 34.7,
+                    "carboidratos": 54.2,
+                    "proteinas": 6.4
+                }
+            },
+            {
+                "_id": "0000159487776",
+                "nome": "Magic Stars Chocolates",
+                "marca": "Milkyway",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:56",
+                "nutrientes": {
+                    "energia": 2330.0,
+                    "gordura": 34.7,
+                    "carboidratos": 54.2,
+                    "proteinas": 6.4
+                }
+            },
+            {
+                "_id": "0000168178238",
+                "nome": "Mini Gingerbread Men, Milk Chocolate",
+                "marca": "Mcvitie's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:27",
+                "nutrientes": {
+                    "energia": 2013.0,
+                    "gordura": 20.0,
+                    "carboidratos": 68.2,
+                    "proteinas": 5.8,
+                    "fibras": 2.0
+                }
+            },
+            {
+                "_id": "0000281621505",
+                "nome": "Warner Hudson, Whisky Chocolates",
+                "marca": "Goode's Bakery & Co.  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:48",
+                "nutrientes": {
+                    "energia": 1879.0,
+                    "gordura": 18.0,
+                    "carboidratos": 58.0,
+                    "proteinas": 2.6
+                }
+            },
+            {
+                "_id": "0000281756504",
+                "nome": "Piasten, Chocolate Assortment",
+                "marca": "Goode's Bakery & Co.  Inc.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:48",
+                "nutrientes": {
+                    "energia": 2029.0,
+                    "gordura": 26.25,
+                    "carboidratos": 58.75,
+                    "proteinas": 8.75,
+                    "fibras": 4.2,
+                    "sodio": 0.012
+                }
+            },
+            {
+                "_id": "0000417012009",
+                "nome": "Rum Trauben Nuss, Milk Chocolate Wih Rum Raisins & Nuts",
+                "marca": "Ritter Sport",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:00:09",
+                "nutrientes": {
+                    "energia": 2142.0,
+                    "gordura": 28.0,
+                    "carboidratos": 56.0,
+                    "proteinas": 8.0,
+                    "fibras": 1.6,
+                    "sodio": 0.052
+                }
+            },
+            {
+                "_id": "0000417296003",
+                "nome": "Milk Chocolate With Caramelized Almonds",
+                "marca": "Ritter Sport",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:00:09",
+                "nutrientes": {
+                    "energia": 2226.0,
+                    "gordura": 31.2,
+                    "carboidratos": 57.2,
+                    "proteinas": 7.2,
+                    "fibras": 2.4,
+                    "sodio": 0.056
+                }
+            },
+            {
+                "_id": "0000539003206",
+                "nome": "Williams, Liquor Chocolate With Williams Pear",
+                "marca": "Lindt",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:48",
+                "nutrientes": {
+                    "energia": 1954.0,
+                    "gordura": 23.0,
+                    "carboidratos": 57.0,
+                    "proteinas": 4.5,
+                    "sodio": 0.12
+                }
+            },
+            {
+                "_id": "0000609124107",
+                "nome": "Solid Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:25:08",
+                "nutrientes": {
+                    "energia": 2318.0,
+                    "gordura": 32.14,
+                    "carboidratos": 58.93,
+                    "proteinas": 7.14,
+                    "fibras": 1.8,
+                    "sodio": 0.08
+                }
+            },
+            {
+                "_id": "0000609133703",
+                "nome": "Madelaine Chocolate Company, Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:10:10",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 32.5,
+                    "carboidratos": 57.5,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.075
+                }
+            },
+            {
+                "_id": "0000609231508",
+                "nome": "Milk Chocolate Rose",
+                "marca": "The Madelaine Chocolate Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:10:38",
+                "nutrientes": {
+                    "energia": 2389.0,
+                    "gordura": 33.33,
+                    "carboidratos": 57.14,
+                    "proteinas": 9.52,
+                    "fibras": 0.0,
+                    "sodio": 0.071
+                }
+            },
+            {
+                "_id": "0000609340767",
+                "nome": "Solid Dark Chocolate",
+                "marca": "The Madelaine Chocolate Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:10:38",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 32.5,
+                    "carboidratos": 57.5,
+                    "proteinas": 5.0,
+                    "fibras": 5.0,
+                    "sodio": 0.012
+                }
+            },
+            {
+                "_id": "0000609346752",
+                "nome": "White Chocolate",
+                "marca": "Madelaine Chocolate Novelties  Inc",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:10:39",
+                "nutrientes": {
+                    "energia": 2406.0,
+                    "gordura": 40.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 7.5,
+                    "fibras": 0.0,
+                    "sodio": 0.1
+                }
+            },
+            {
+                "_id": "0000609406104",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate Cigars",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 2238.0,
+                    "gordura": 32.56,
+                    "carboidratos": 58.14,
+                    "proteinas": 6.98,
+                    "fibras": 2.3,
+                    "sodio": 0.081
+                }
+            },
+            {
+                "_id": "0000609407101",
+                "nome": "Madelaine Chocolate, It's A Girl! Solid Milk Chocolate Cigars, Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 2238.0,
+                    "gordura": 32.56,
+                    "carboidratos": 58.14,
+                    "proteinas": 6.98,
+                    "fibras": 2.3,
+                    "sodio": 0.081
+                }
+            },
+            {
+                "_id": "0000609900114",
+                "nome": "The Madelaine Chocolate Company, All Natural Dark Chocolate Gift Stick",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:10",
+                "nutrientes": {
+                    "energia": 2314.0,
+                    "gordura": 39.47,
+                    "carboidratos": 44.74,
+                    "proteinas": 10.53,
+                    "fibras": 10.5,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "0000609941001",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 32.5,
+                    "carboidratos": 57.5,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.075
+                }
+            },
+            {
+                "_id": "0000609941049",
+                "nome": "The Madelaine Chocolate Company, Solid Dark Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:39",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 32.5,
+                    "carboidratos": 57.5,
+                    "proteinas": 5.0,
+                    "fibras": 5.0,
+                    "sodio": 0.012
+                }
+            },
+            {
+                "_id": "0000609941759",
+                "nome": "Solid Milk Chocolate",
+                "marca": "The Madelaine Chocolate Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:10",
+                "nutrientes": {
+                    "energia": 2326.0,
+                    "gordura": 33.33,
+                    "carboidratos": 58.33,
+                    "proteinas": 8.33,
+                    "fibras": 2.8,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "0000609941766",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:10",
+                "nutrientes": {
+                    "energia": 2326.0,
+                    "gordura": 33.33,
+                    "carboidratos": 58.33,
+                    "proteinas": 8.33,
+                    "fibras": 2.8,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "0000609962037",
+                "nome": "The Madelaine Chocolate Comapny, Solid Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:40:00",
+                "nutrientes": {
+                    "energia": 2314.0,
+                    "gordura": 31.58,
+                    "carboidratos": 57.89,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.079
+                }
+            },
+            {
+                "_id": "0000609962044",
+                "nome": "The Madelaine Chocolate Company, Solid Dark Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:40:01",
+                "nutrientes": {
+                    "energia": 2201.0,
+                    "gordura": 31.58,
+                    "carboidratos": 57.89,
+                    "proteinas": 5.26,
+                    "fibras": 5.3,
+                    "sodio": 0.013
+                }
+            },
+            {
+                "_id": "0000609962082",
+                "nome": "Solid Dark Chocolate",
+                "marca": "The Madelaine Chocolate Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 09:56:37",
+                "nutrientes": {
+                    "energia": 2201.0,
+                    "gordura": 31.58,
+                    "carboidratos": 57.89,
+                    "proteinas": 5.26,
+                    "fibras": 5.3,
+                    "sodio": 0.013
+                }
+            },
+            {
+                "_id": "0000609965007",
+                "nome": "Milk Chocolate Malt Balls",
+                "marca": "The Madelaine Chocolate Company",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 09:56:37",
+                "nutrientes": {
+                    "energia": 2197.0,
+                    "gordura": 27.5,
+                    "carboidratos": 67.5,
+                    "proteinas": 5.0,
+                    "fibras": 0.0,
+                    "sodio": 0.125
+                }
+            },
+            {
+                "_id": "0000609983001",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:10",
+                "nutrientes": {
+                    "energia": 2326.0,
+                    "gordura": 33.33,
+                    "carboidratos": 58.33,
+                    "proteinas": 8.33,
+                    "fibras": 2.8,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "0000609983032",
+                "nome": "The Madelaine Chocolate Company, Solid Dark Chocolate",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:10",
+                "nutrientes": {
+                    "energia": 2209.0,
+                    "gordura": 33.33,
+                    "carboidratos": 58.33,
+                    "proteinas": 5.56,
+                    "fibras": 5.6,
+                    "sodio": 0.014
+                }
+            },
+            {
+                "_id": "0000609989010",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate Bunnies",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:11",
+                "nutrientes": {
+                    "energia": 2272.0,
+                    "gordura": 31.43,
+                    "carboidratos": 57.14,
+                    "proteinas": 5.71,
+                    "fibras": 2.9,
+                    "sodio": 0.071
+                }
+            },
+            {
+                "_id": "0000609989027",
+                "nome": "The Madelaine Chocolate Company, Solid Milk Chocolate Chicks",
+                "marca": "Madelaine Chocolate Novelties",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:40:01",
+                "nutrientes": {
+                    "energia": 2314.0,
+                    "gordura": 31.58,
+                    "carboidratos": 57.89,
+                    "proteinas": 7.89,
+                    "fibras": 2.6,
+                    "sodio": 0.079
+                }
+            },
+            {
+                "_id": "0000698309041",
+                "nome": "Feletti, Pralines Candy, Milk Chocolate",
+                "marca": "Better Ideas",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:53",
+                "nutrientes": {
+                    "energia": 2209.0,
+                    "gordura": 30.56,
+                    "carboidratos": 61.11,
+                    "proteinas": 5.56,
+                    "fibras": 2.8,
+                    "sodio": 0.097
+                }
+            },
+            {
+                "_id": "0000698465815",
+                "nome": "Feletti, Milk Chocolate Pralines",
+                "marca": "Better Ideas",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:00:36",
+                "nutrientes": {
+                    "energia": 2264.0,
+                    "gordura": 32.43,
+                    "carboidratos": 59.46,
+                    "proteinas": 2.7,
+                    "fibras": 2.7,
+                    "sodio": 0.081
+                }
+            },
+            {
+                "_id": "0000790200123",
+                "nome": "Lite, Fine Chocolate Candy Bar, Dark Chocolate",
+                "marca": "Simply",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:33:39",
+                "nutrientes": {
+                    "energia": 1674.0,
+                    "gordura": 32.0,
+                    "carboidratos": 60.0,
+                    "proteinas": 4.0,
+                    "fibras": 12.0,
+                    "sodio": 0.0
+                }
+            },
+            {
+                "_id": "00011679",
+                "nome": "All Butter Cookies Belgian Chocolate Chunk",
+                "marca": "Marks & Spencer",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-07-09 16:32:28",
+                "nutrientes": {
+                    "energia": 2096.0,
+                    "gordura": 26.0,
+                    "carboidratos": 60.1,
+                    "proteinas": 5.4,
+                    "fibras": 2.8,
+                    "sodio": 0.354330708661417
+                }
+            },
+            {
+                "_id": "00011693",
+                "nome": "All Butter Belgian White Chocolate Chunk Cookies",
+                "marca": "Marks & Spencer",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-05-23 08:41:24",
+                "nutrientes": {
+                    "energia": 2172.0,
+                    "gordura": 29.1,
+                    "carboidratos": 58.4,
+                    "proteinas": 5.5,
+                    "fibras": 1.3,
+                    "sodio": 0.393700787401575
+                }
+            },
+            {
+                "_id": "00011747",
+                "nome": "All Butter Triple Belgian Chocolate Chunk Cookies",
+                "marca": "Marks & Spencer",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-06-16 12:24:41",
+                "nutrientes": {
+                    "energia": 2184.0,
+                    "proteinas": 5.6,
+                    "fibras": 2.9,
+                    "sodio": 0.334645669291339
+                }
+            },
+            {
+                "_id": "00011785",
+                "nome": "Chocolate chip & hazelnut cookies",
+                "marca": "M&S",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-08-31 11:09:04",
+                "nutrientes": {
+                    "energia": 2100.0,
+                    "gordura": 25.3,
+                    "carboidratos": 61.1,
+                    "proteinas": 6.0,
+                    "fibras": 3.0,
+                    "sodio": 0.248031496062992
+                }
+            },
+            {
+                "_id": "0001210078780",
+                "nome": "Mini Prince Sabl\u00e9s Go\u00fbt chocolat ",
+                "marca": "LU",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-25 21:19:25",
+                "nutrientes": {}
+            },
+            {
+                "_id": "0001757016092",
+                "nome": "Finest Milk Chocolate",
+                "marca": "Weinrich's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:49",
+                "nutrientes": {
+                    "energia": 2293.0,
+                    "gordura": 35.71,
+                    "carboidratos": 50.0,
+                    "proteinas": 7.14,
+                    "fibras": 4.8,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "000227",
+                "nome": "Bijou Caramel ChocoLait",
+                "marca": "Bijou",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2016-12-01 20:35:57",
+                "nutrientes": {
+                    "energia": 1807.0,
+                    "gordura": 20.0,
+                    "carboidratos": 57.0,
+                    "proteinas": 5.3,
+                    "fibras": 1.0,
+                    "sodio": 0.275590551181102
+                }
+            },
+            {
+                "_id": "00023115",
+                "nome": "Giant cookies triple belgian chocolate",
+                "marca": "marks and Spencer",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-04-02 15:15:34",
+                "nutrientes": {}
+            },
+            {
+                "_id": "00028097",
+                "nome": "Viennois au chocolat",
+                "marca": "Mark & Spencer",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-09-10 14:50:27",
+                "nutrientes": {
+                    "energia": 2205.0,
+                    "gordura": 29.7,
+                    "carboidratos": 58.6,
+                    "proteinas": 5.4,
+                    "fibras": 1.8,
+                    "sodio": 0.275590551181102
+                }
+            },
+            {
+                "_id": "0002859037565",
+                "nome": "Assorted Pralines Chocolates",
+                "marca": "Maitre Truffout",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:59:04",
+                "nutrientes": {
+                    "energia": 1883.0,
+                    "gordura": 20.0,
+                    "carboidratos": 62.5,
+                    "proteinas": 5.0,
+                    "fibras": 2.5,
+                    "sodio": 0.05
+                }
+            },
+            {
+                "_id": "00028653",
+                "nome": "Jersey Milk Chocolate",
+                "marca": "Marks & Spencer",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-06-17 09:22:46",
+                "nutrientes": {}
+            },
+            {
+                "_id": "0003006010349",
+                "nome": "Finest Milk Chocolate",
+                "marca": "Storz Chocolade",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:17",
+                "nutrientes": {
+                    "energia": 2259.0,
+                    "gordura": 34.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 8.0,
+                    "fibras": 2.0,
+                    "sodio": 0.06
+                }
+            },
+            {
+                "_id": "0003006012749",
+                "nome": "Edelvollmilch- Chocolade Finest Milk Chocolate",
+                "marca": "Storz Chocolade",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:17",
+                "nutrientes": {
+                    "energia": 2259.0,
+                    "gordura": 34.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 8.0,
+                    "fibras": 2.0,
+                    "sodio": 0.06
+                }
+            },
+            {
+                "_id": "0003006013180",
+                "nome": "Edelvollmilch-Chocolade Finest Milk Chocolate",
+                "marca": "Storz Chocolade",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:39",
+                "nutrientes": {
+                    "energia": 2259.0,
+                    "gordura": 34.0,
+                    "carboidratos": 50.0,
+                    "proteinas": 8.0,
+                    "fibras": 2.0,
+                    "sodio": 0.06
+                }
+            },
+            {
+                "_id": "0003006013371",
+                "nome": "Solid Milk Chocolate",
+                "marca": "Storz",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:56:46",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 37.5,
+                    "carboidratos": 50.0,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.062
+                }
+            },
+            {
+                "_id": "00032582",
+                "nome": "Decorated hollow white chocolate Arendelle Castle",
+                "marca": "M&S",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-04-02 13:51:41",
+                "nutrientes": {}
+            },
+            {
+                "_id": "0003535048370",
+                "nome": "Mousse, Milk Chocolate With Chocolate Mousse Filling",
+                "marca": "Witor's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:47",
+                "nutrientes": {
+                    "energia": 2364.0,
+                    "gordura": 37.7,
+                    "carboidratos": 48.1,
+                    "proteinas": 7.8
+                }
+            },
+            {
+                "_id": "0003535048455",
+                "nome": "Mousse, Milk Chocolate With Mousse Filling, Yogurt",
+                "marca": "Witor's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:02:15",
+                "nutrientes": {
+                    "energia": 2389.0,
+                    "gordura": 37.3,
+                    "carboidratos": 53.6,
+                    "proteinas": 5.1
+                }
+            },
+            {
+                "_id": "00052368",
+                "nome": "Belgian milk chocolate coated brazil nuts",
+                "marca": "M&S",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-07-09 13:05:19",
+                "nutrientes": {
+                    "energia": 2489.0,
+                    "gordura": 46.4,
+                    "carboidratos": 33.3,
+                    "proteinas": 9.6,
+                    "fibras": 2.7,
+                    "sodio": 0.0511811023622047
+                }
+            },
+            {
+                "_id": "0006423460193",
+                "nome": "Chocolart, Assorted Milk Chocolate Pralines",
+                "marca": "Sorini",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:56:53",
+                "nutrientes": {
+                    "energia": 2247.0,
+                    "gordura": 31.71,
+                    "carboidratos": 58.54,
+                    "proteinas": 4.88,
+                    "fibras": 2.4,
+                    "sodio": 0.073
+                }
+            },
+            {
+                "_id": "0006423461077",
+                "nome": "Passion, Assorted Milk Chocolate",
+                "marca": "Sorini",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:57",
+                "nutrientes": {
+                    "energia": 2201.0,
+                    "gordura": 28.95,
+                    "carboidratos": 63.16,
+                    "proteinas": 5.26,
+                    "fibras": 2.6,
+                    "sodio": 0.053
+                }
+            },
+            {
+                "_id": "0006423462951",
+                "nome": "Assorted Chocolate Pralines",
+                "marca": "Sorini Italia",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:02:15",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 32.5,
+                    "carboidratos": 60.0,
+                    "proteinas": 5.0,
+                    "fibras": 2.5,
+                    "sodio": 0.088
+                }
+            },
+            {
+                "_id": "0006446001977",
+                "nome": "Milk Chocolate Balls With Cream And Chocolate",
+                "marca": "Confiserie Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:50",
+                "nutrientes": {
+                    "energia": 2293.0,
+                    "gordura": 35.71,
+                    "carboidratos": 54.76,
+                    "proteinas": 7.14,
+                    "fibras": 2.4,
+                    "sodio": 0.083
+                }
+            },
+            {
+                "_id": "0006446001984",
+                "nome": "Chocolate Ball",
+                "marca": "Confiserie Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:18",
+                "nutrientes": {
+                    "energia": 1891.0,
+                    "gordura": 28.57,
+                    "carboidratos": 45.24,
+                    "proteinas": 4.76,
+                    "fibras": 2.4,
+                    "sodio": 0.048
+                }
+            },
+            {
+                "_id": "0006446002264",
+                "nome": "Chocolate Balls Filled With Milk Cream And Chocolate",
+                "marca": "Heidel Confiserie",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:01:50",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 32.5,
+                    "carboidratos": 55.0,
+                    "proteinas": 5.0,
+                    "fibras": 2.5,
+                    "sodio": 0.075
+                }
+            },
+            {
+                "_id": "0006446002660",
+                "nome": "Merry Christmas Chocolate Balls",
+                "marca": "Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:39",
+                "nutrientes": {
+                    "energia": 2360.0,
+                    "gordura": 35.9,
+                    "carboidratos": 56.41,
+                    "proteinas": 5.13,
+                    "fibras": 2.6,
+                    "sodio": 0.038
+                }
+            },
+            {
+                "_id": "0006446002677",
+                "nome": "Merry Christmas Chocolate Balls Filled With Praline Cream",
+                "marca": "Confiserie Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:18",
+                "nutrientes": {
+                    "energia": 2301.0,
+                    "gordura": 35.0,
+                    "carboidratos": 55.0,
+                    "proteinas": 5.0,
+                    "fibras": 2.5,
+                    "sodio": 0.05
+                }
+            },
+            {
+                "_id": "0006446003520",
+                "nome": "Merry Christmas Minis Chocolate Bar",
+                "marca": "Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:39",
+                "nutrientes": {
+                    "energia": 2406.0,
+                    "gordura": 40.0,
+                    "carboidratos": 52.5,
+                    "proteinas": 7.5,
+                    "fibras": 2.5,
+                    "sodio": 0.075
+                }
+            },
+            {
+                "_id": "0006446004084",
+                "nome": "Milk Chocolate",
+                "marca": "Confiserie Heidel",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:09:39",
+                "nutrientes": {
+                    "energia": 2423.0,
+                    "gordura": 39.47,
+                    "carboidratos": 52.63,
+                    "proteinas": 5.26,
+                    "fibras": 2.6,
+                    "sodio": 0.079
+                }
+            },
+            {
+                "_id": "00065269",
+                "nome": "Pancakes au Chocolat belge",
+                "marca": "Marks & Spencer",
+                "categoria": "Cr\u00eapes and galettes",
+                "data_atualizacao": "2017-08-02 10:10:19",
+                "nutrientes": {
+                    "energia": 1155.0,
+                    "gordura": 9.7,
+                    "carboidratos": 39.8,
+                    "proteinas": 6.6,
+                    "fibras": 1.5,
+                    "sodio": 0.216535433070866
+                }
+            },
+            {
+                "_id": "0006894530005",
+                "nome": "Chocolate Cookies",
+                "marca": "Lambertz",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:58:19",
+                "nutrientes": {
+                    "energia": 2209.0,
+                    "gordura": 27.78,
+                    "carboidratos": 63.89,
+                    "proteinas": 5.56,
+                    "fibras": 5.6,
+                    "sodio": 0.125
+                }
+            },
+            {
+                "_id": "00071093",
+                "nome": "Hollow Milk Chocolate Decorated R2D2 Figure",
+                "marca": "Marks & Spencer",
+                "categoria": "Sugary snacks",
+                "data_atualizacao": "2017-07-09 10:19:39",
+                "nutrientes": {
+                    "energia": 2245.0,
+                    "gordura": 32.5,
+                    "carboidratos": 53.7,
+                    "proteinas": 6.8,
+                    "fibras": 1.7,
+                    "sodio": 0.078740157480315
+                }
+            },
+            {
+                "_id": "0008077101101",
+                "nome": "Chocolate Cream Dip Wiht Crispy Craker Sticks",
+                "marca": "Meiji",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:16:36",
+                "nutrientes": {
+                    "energia": 2188.0,
+                    "gordura": 26.32,
+                    "carboidratos": 61.4,
+                    "proteinas": 7.02,
+                    "fibras": 1.8,
+                    "sodio": 0.523
+                }
+            },
+            {
+                "_id": "0008077101132",
+                "nome": "Yam Yam Double Cream, Chocolate, Strawberry",
+                "marca": "Meiji",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:02:03",
+                "nutrientes": {
+                    "energia": 2280.0,
+                    "gordura": 31.82,
+                    "carboidratos": 59.09,
+                    "proteinas": 6.82,
+                    "fibras": 2.3,
+                    "sodio": 0.273
+                }
+            },
+            {
+                "_id": "0008077102115",
+                "nome": "Hello Panda, Choco Biscuits With Choco Cream, Double Choco",
+                "marca": "Meiji",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 10:00:48",
+                "nutrientes": {
+                    "energia": 2230.0,
+                    "gordura": 26.67,
+                    "carboidratos": 66.67,
+                    "proteinas": 6.67,
+                    "fibras": 6.7,
+                    "sodio": 0.333
+                }
+            },
+            {
+                "_id": "0008077102122",
+                "nome": "Hellow Panda, Biscuits With Choco Cream",
+                "marca": "Meiji",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:18:20",
+                "nutrientes": {
+                    "energia": 2230.0,
+                    "gordura": 30.0,
+                    "carboidratos": 60.0,
+                    "proteinas": 6.67,
+                    "fibras": 6.7,
+                    "sodio": 0.367
+                }
+            },
+            {
+                "_id": "0008077102207",
+                "nome": "Hello Panda, Biscuits With Choco Cream",
+                "marca": "Meiji",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 13:16:28",
+                "nutrientes": {
+                    "energia": 2222.0,
+                    "gordura": 28.85,
+                    "carboidratos": 61.54,
+                    "proteinas": 7.69,
+                    "fibras": 3.8,
+                    "sodio": 0.346
+                }
+            },
+            {
+                "_id": "0008229101126",
+                "nome": "Chocolate Bites",
+                "marca": "Bill Knapp's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:18:27",
+                "nutrientes": {
+                    "energia": 1841.0,
+                    "gordura": 26.98,
+                    "carboidratos": 58.65,
+                    "proteinas": 2.05,
+                    "fibras": 0.0,
+                    "sodio": 0.308
+                }
+            },
+            {
+                "_id": "0008229107005",
+                "nome": "Classic 7'' Chocolate Cake",
+                "marca": "Bill Knapp's",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 09:36:09",
+                "nutrientes": {
+                    "energia": 1079.0,
+                    "gordura": 5.47,
+                    "carboidratos": 46.09,
+                    "proteinas": 3.91,
+                    "fibras": 1.6,
+                    "sodio": 0.516
+                }
+            },
+            {
+                "_id": "0008346026524",
+                "nome": "Meal Replacement Shake Mix, Creamy Milk Chocolate",
+                "marca": "Slim Fast",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 12:22:03",
+                "nutrientes": {
+                    "energia": 1770.0,
+                    "gordura": 11.54,
+                    "carboidratos": 69.23,
+                    "proteinas": 7.69,
+                    "fibras": 19.2,
+                    "sodio": 0.462
+                }
+            },
+            {
+                "_id": "0008346121410",
+                "nome": "Chocolate Cookie Dough Protein Meal Bars",
+                "marca": "Ksf Acquisition Corporation",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:31:47",
+                "nutrientes": {
+                    "energia": 1611.0,
+                    "gordura": 7.69,
+                    "carboidratos": 57.69,
+                    "proteinas": 19.23,
+                    "fibras": 13.5,
+                    "sodio": 0.231
+                }
+            },
+            {
+                "_id": "0008346121427",
+                "nome": "Slim Fast, Protein Meal Bars, Chocolate Fudge Brownie",
+                "marca": "Ksf Acquisition Corporation",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:12:40",
+                "nutrientes": {
+                    "energia": 1611.0,
+                    "gordura": 7.69,
+                    "carboidratos": 57.69,
+                    "proteinas": 19.23,
+                    "fibras": 17.3,
+                    "sodio": 0.385
+                }
+            },
+            {
+                "_id": "0008346122264",
+                "nome": "Creamy Milk Chocolate",
+                "marca": "Slim-Fast!",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 09:36:10",
+                "nutrientes": {
+                    "energia": 268.0,
+                    "gordura": 2.03,
+                    "carboidratos": 8.47,
+                    "proteinas": 3.39,
+                    "fibras": 1.7,
+                    "sodio": 0.071
+                }
+            },
+            {
+                "_id": "0008346640027",
+                "nome": "Dark Chocolate Sea Salt",
+                "marca": "Ksf Acquisition Corporation",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:29:16",
+                "nutrientes": {
+                    "energia": 1766.0,
+                    "gordura": 22.22,
+                    "carboidratos": 44.44,
+                    "proteinas": 22.22,
+                    "fibras": 11.1,
+                    "sodio": 0.556
+                }
+            },
+            {
+                "_id": "0008346720019",
+                "nome": "Slimfast, 10 Day Slim Down Meal Replacement Shake, Creamy Milk Chocolate",
+                "marca": "Ksf Acquisition Corporation",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:29:28",
+                "nutrientes": {
+                    "energia": 243.0,
+                    "gordura": 1.85,
+                    "carboidratos": 7.69,
+                    "proteinas": 3.08,
+                    "fibras": 1.5,
+                    "sodio": 0.065
+                }
+            },
+            {
+                "_id": "0008346740086",
+                "nome": "Slim Fast, Meal Replacement Shake, Creamy Chocolate",
+                "marca": "Ksf Acquisition Corporation",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:29:28",
+                "nutrientes": {
+                    "energia": 230.0,
+                    "gordura": 2.46,
+                    "carboidratos": 1.85,
+                    "proteinas": 6.15,
+                    "fibras": 1.5,
+                    "sodio": 0.068
+                }
+            },
+            {
+                "_id": "0008346800025",
+                "nome": "100 Calorie Snack Bites, Peanut Butter Chocolate",
+                "marca": "Slimfast",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 10:29:16",
+                "nutrientes": {
+                    "energia": 1820.0,
+                    "gordura": 26.09,
+                    "carboidratos": 56.52,
+                    "proteinas": 17.39,
+                    "fibras": 21.7,
+                    "sodio": 0.261
+                }
+            },
+            {
+                "_id": "0008563888752",
+                "nome": "Double Chocolate Mini Eclairs",
+                "marca": "Poppies",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 09:36:11",
+                "nutrientes": {
+                    "energia": 1297.0,
+                    "gordura": 20.24,
+                    "carboidratos": 27.38,
+                    "proteinas": 4.76,
+                    "fibras": 1.2,
+                    "sodio": 0.095
+                }
+            },
+            {
+                "_id": "0008725000015",
+                "nome": "Long Grove Confectionery Co., Chocolate Fudge",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:49",
+                "nutrientes": {
+                    "energia": 1674.0,
+                    "gordura": 17.5,
+                    "carboidratos": 67.5,
+                    "proteinas": 2.5,
+                    "fibras": 0.0,
+                    "sodio": 0.115
+                }
+            },
+            {
+                "_id": "0008725020082",
+                "nome": "Long Grove Confectionery Co., Halloween Chocolate Pop",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:11",
+                "nutrientes": {
+                    "energia": 2238.0,
+                    "gordura": 32.56,
+                    "carboidratos": 58.14,
+                    "proteinas": 6.98,
+                    "fibras": 2.3,
+                    "sodio": 0.081
+                }
+            },
+            {
+                "_id": "0008725021072",
+                "nome": "Long Grove Confectionery Co., Day To Dead Chocolate Skull",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 14:54:12",
+                "nutrientes": {
+                    "energia": 2192.0,
+                    "gordura": 33.33,
+                    "carboidratos": 59.52,
+                    "proteinas": 4.76,
+                    "fibras": 2.4,
+                    "sodio": 0.06
+                }
+            },
+            {
+                "_id": "0008725033648",
+                "nome": "Long Grove Confectionery Co, Dark Chocolate, Peppermint Creames",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:10:12",
+                "nutrientes": {
+                    "energia": 1870.0,
+                    "gordura": 15.79,
+                    "carboidratos": 76.32,
+                    "proteinas": 2.63,
+                    "fibras": 2.6,
+                    "sodio": 0.039
+                }
+            },
+            {
+                "_id": "0008725033655",
+                "nome": "Long Grove Confectionery Co., Milk Chocolate, Coconut Caramel",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:50",
+                "nutrientes": {
+                    "energia": 2092.0,
+                    "gordura": 26.32,
+                    "carboidratos": 68.42,
+                    "proteinas": 5.26,
+                    "fibras": 5.3,
+                    "sodio": 0.171
+                }
+            },
+            {
+                "_id": "0008725056142",
+                "nome": "Solid Chocolate Rabbit",
+                "marca": "Long Grove Confectionery",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-10 08:10:39",
+                "nutrientes": {
+                    "energia": 2251.0,
+                    "gordura": 30.77,
+                    "carboidratos": 58.97,
+                    "proteinas": 7.69,
+                    "fibras": 2.6,
+                    "sodio": 0.077
+                }
+            },
+            {
+                "_id": "0008725060002",
+                "nome": "Long Grove Confectionery Co., Corn, Chocolatey Drizzled Caramel",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:52",
+                "nutrientes": {
+                    "energia": 1536.0,
+                    "gordura": 10.0,
+                    "carboidratos": 80.0,
+                    "proteinas": 3.33,
+                    "fibras": 3.3,
+                    "sodio": 0.267
+                }
+            },
+            {
+                "_id": "0008725062044",
+                "nome": "Long Grove Confectionery Co, Pretzel Twists, Milk Chocolate",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 16:10:14",
+                "nutrientes": {
+                    "energia": 1954.0,
+                    "gordura": 20.0,
+                    "carboidratos": 66.67,
+                    "proteinas": 6.67,
+                    "fibras": 3.3,
+                    "sodio": 0.383
+                }
+            },
+            {
+                "_id": "0008725070018",
+                "nome": "Long Grove Confectionery Co., Graham Crackers, Milk Chocolate",
+                "marca": "Long Grove Confectionery Co.",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:03:52",
+                "nutrientes": {
+                    "energia": 2243.0,
+                    "gordura": 28.57,
+                    "carboidratos": 64.29,
+                    "proteinas": 7.14,
+                    "fibras": 3.6,
+                    "sodio": 0.179
+                }
+            },
+            {
+                "_id": "0008725070025",
+                "nome": "Dark Chocolate Sea Salt Caramels",
+                "marca": "Long Grove Confectionery Co",
+                "categoria": "Outros",
+                "data_atualizacao": "2017-03-09 15:25:08",
+                "nutrientes": {
+                    "energia": 1695.0,
+                    "gordura": 21.43,
+                    "carboidratos": 59.52,
+                    "proteinas": 2.38,
+                    "fibras": 2.4,
+                    "sodio": 0.476
+                }
+            }
+        ],
+        "aggregate_avg_carbs_by_category": [
+            {
+                "_id": "Outros",
+                "media": 77868.09167504881
+            },
+            {
+                "_id": "Palm-sugar",
+                "media": 100.0
+            },
+            {
+                "_id": "Asian-grocery",
+                "media": 100.0
+            },
+            {
+                "_id": "Sussungsmittel",
+                "media": 100.0
+            },
+            {
+                "_id": "fr:Sucre-en-petits-morceaux",
+                "media": 100.0
+            }
+        ],
+        "delete_produto": true
+    },
+    "timings": {
+        "read_produto": 0.018486815999494866,
+        "create_produto": 0.0014085459988564253,
+        "add_new_nutrient_vitamin_c": 0.002479164002579637,
+        "get_batch_products": 0.005283218008116819,
+        "find_by_marca_and_nutriscore": 0.09602920999168418,
+        "find_by_energia_range": 0.0008918470120988786,
+        "find_products_with_calcium": 0.1441712399973767,
+        "search_by_name": 0.004178389004664496,
+        "aggregate_avg_carbs_by_category": 0.20696368000062648,
+        "delete_produto": 0.0009975680004572496
+    },
+    "total_time": 0.4808896780159557
+}
