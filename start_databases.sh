@@ -28,8 +28,8 @@ echo "init cassandra - port: 9042   "
 # sem passar flag de memoria cassandra não inicia corretamente
 docker run -d \
   --name dev-cassandra \
-  -e MAX_HEAP_SIZE=512M \
-  -e HEAP_NEWSIZE=100M \
+  -e MAX_HEAP_SIZE=8G \
+  -e HEAP_NEWSIZE=1G \
   -p 9042:9042 \
   cassandra:latest
 
@@ -39,5 +39,5 @@ docker run -d \
   -p 6379:6379 \
   redis:7-alpine
 
-echo "\nend. Status:"
+echo "Status:"
 docker ps --filter "name=dev-*"

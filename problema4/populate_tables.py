@@ -96,22 +96,38 @@ def load_into_mongo(db, data):
     print("mongo-> dados carregados.")
 
 def load_into_cassandra(session, data):
-    print("carregando dados cassandra...")
-    
+    print("Carregando dados no Cassandra...")
+
     insert_stmt = session.prepare("""
         INSERT INTO sensors (sensor_id, timestamp, temperature, humidity)
         VALUES (?, ?, ?, ?)
     """)
     
-    # Cassandra lida bem com inserts assincronos, mas vamos fazer síncrono simples por enquanto
-    # para garantir consistência no teste de carga inicial
+    batch_size = 500
+    batch = BatchStatement()
+    count = 0
+    
     for row in tqdm(data, desc="Cassandra Load"):
-        session.execute(insert_stmt, (
+        batch.add(insert_stmt, (
             row['sensor_id'], 
             row['timestamp'], 
             row['temperature'], 
             row['humidity']
         ))
+        
+        count += 1
+        
+        # Se atingir o tamanho do batch, execute e resete
+        if count >= batch_size:
+            session.execute(batch)
+            batch = BatchStatement()  # Reseta o batch
+            count = 0
+    
+    # Executar o último batch, caso haja dados restantes
+    if count > 0:
+        session.execute(batch)
+
+    print("Cassandra -> Dados carregados.")
 
 def load_into_redis(conn, data):
     print("carregando dados redis...")
