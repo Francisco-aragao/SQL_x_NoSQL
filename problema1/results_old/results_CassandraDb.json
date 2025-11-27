@@ -1,0 +1,52 @@
+{
+    "results": {
+        "read_cliente": {
+            "cliente_id": "9613",
+            "nome": "Dra. Ana L\u00edvia Nogueira",
+            "email": "bianca45@example.com",
+            "data_cadastro": "2020-10-15 00:00:00"
+        },
+        "create_produto": "",
+        "update_produto_preco": false,
+        "find_pedidos_por_status": [],
+        "find_pedidos_por_data": [],
+        "find_pedidos_por_cliente": [
+            {
+                "cliente_id": "9613",
+                "pedido_id": "9541.0",
+                "data_pedido": "2024-02-22 00:00:00",
+                "status": "Pendente"
+            },
+            {
+                "cliente_id": "9613",
+                "pedido_id": "4443.0",
+                "data_pedido": "2024-04-17 00:00:00",
+                "status": "Pendente"
+            }
+        ],
+        "find_itens_por_pedido": [
+            {
+                "pedido_id": "10143.0",
+                "item_id": "5973.0",
+                "quantidade": 1,
+                "preco_unitario": "448.1299999999999954525264911353588104248046875"
+            }
+        ],
+        "find_cliente_por_pedido": null,
+        "delete_pedido": true,
+        "get_top_10_clientes_por_pedidos": []
+    },
+    "timings": {
+        "read_cliente": 0.0015278409991879016,
+        "create_produto": 1.1378000635886565e-05,
+        "update_produto_preco": 2.835000486811623e-06,
+        "find_pedidos_por_status": 2.534001396270469e-06,
+        "find_pedidos_por_data": 1.73499938682653e-06,
+        "find_pedidos_por_cliente": 0.0009230870018654969,
+        "find_itens_por_pedido": 0.0007805360000929795,
+        "find_cliente_por_pedido": 1.327700010733679e-05,
+        "delete_pedido": 0.0004549389996100217,
+        "get_top_10_clientes_por_pedidos": 9.1479996626731e-06
+    },
+    "total_time": 0.0037273100024322048
+}

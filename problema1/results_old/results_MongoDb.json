@@ -122362,11 +122362,11 @@
         "delete_pedido": true,
         "get_top_10_clientes_por_pedidos": [
             {
-                "cliente_id": "4651",
+                "cliente_id": "2228",
                 "total_pedidos": 8
             },
             {
-                "cliente_id": "2410",
+                "cliente_id": "4651",
                 "total_pedidos": 8
             },
             {
@@ -122374,15 +122374,11 @@
                 "total_pedidos": 8
             },
             {
-                "cliente_id": "2228",
+                "cliente_id": "2410",
                 "total_pedidos": 8
             },
             {
-                "cliente_id": "5657",
-                "total_pedidos": 7
-            },
-            {
-                "cliente_id": "1811",
+                "cliente_id": "1685",
                 "total_pedidos": 7
             },
             {
@@ -122390,30 +122386,34 @@
                 "total_pedidos": 7
             },
             {
-                "cliente_id": "206",
+                "cliente_id": "2084",
                 "total_pedidos": 7
             },
             {
-                "cliente_id": "2084",
+                "cliente_id": "1811",
                 "total_pedidos": 7
             },
             {
                 "cliente_id": "152",
                 "total_pedidos": 7
+            },
+            {
+                "cliente_id": "1141",
+                "total_pedidos": 7
             }
         ]
     },
     "timings": {
-        "read_cliente": 0.0006926739997652476,
-        "create_produto": 0.000545693999811192,
-        "update_produto_preco": 0.0008429339995927876,
-        "find_pedidos_por_status": 0.02923006000037276,
-        "find_pedidos_por_data": 0.009018178000587795,
-        "find_pedidos_por_cliente": 0.00657846400008566,
-        "find_itens_por_pedido": 0.0008697650000613066,
-        "find_cliente_por_pedido": 0.0012056920004397398,
-        "delete_pedido": 0.0008252069992522593,
-        "get_top_10_clientes_por_pedidos": 0.01647093900010077
+        "read_cliente": 0.0010960889994748868,
+        "create_produto": 0.0006263020004553255,
+        "update_produto_preco": 0.00028335699971648864,
+        "find_pedidos_por_status": 0.018616162000398617,
+        "find_pedidos_por_data": 0.0053125769991311245,
+        "find_pedidos_por_cliente": 0.005087347002699971,
+        "find_itens_por_pedido": 0.00032052599999587983,
+        "find_cliente_por_pedido": 0.00043275599819025956,
+        "delete_pedido": 0.00023901500026113354,
+        "get_top_10_clientes_por_pedidos": 0.014751009999599773
     },
-    "total_time": 0.06627960700006952
+    "total_time": 0.04676514099992346
 }

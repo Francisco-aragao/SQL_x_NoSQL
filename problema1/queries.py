@@ -488,6 +488,9 @@ if __name__ == "__main__":
 
             with open(f"./results/results_{db.__class__.__name__}.json", "w") as f:
                 json.dump(results, f, default=str, indent=4)
+
+            with open("./results/OUT.txt", "a") as f:
+                f.write(f"{db.__class__.__name__}: {results['total_time']:.4f}s\n")
             print(f"fim. Tempo total: {results['total_time']:.4f}s")
         except Exception as e:
             print(f"erro --> {e}")
