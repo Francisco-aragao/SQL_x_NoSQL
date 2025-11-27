@@ -1,0 +1,5 @@
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O         PIDS
+b202c0868a39   dev-redis       0.22%     3.855MiB / 15.17GiB   0.02%     1.32kB / 126B   815kB / 0B        6
+5ae06359863d   dev-cassandra   1.03%     8.912GiB / 15.17GiB   58.73%    1.51kB / 126B   12.9MB / 16.3MB   85
+35eaa8c096b9   dev-mongo       0.67%     203.1MiB / 15.17GiB   1.31%     1.9kB / 289B    7.86MB / 1.02MB   50
+d63e0cade728   dev-postgres    1.27%     34.18MiB / 15.17GiB   0.22%     1.59kB / 126B   2.47MB / 61.6MB   6

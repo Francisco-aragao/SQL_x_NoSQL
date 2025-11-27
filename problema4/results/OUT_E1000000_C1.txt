@@ -1,0 +1,18 @@
+
+--- Benchmarking PostgresDb (Concurrency: 1, Ops: 10000) ---
+Completed in 15.8431s. Throughput: 631.19 ops/sec
+
+--- Benchmarking MongoDb (Concurrency: 1, Ops: 10000) ---
+Completed in 12.2593s. Throughput: 815.71 ops/sec
+
+--- Benchmarking CassandraDb (Concurrency: 1, Ops: 10000) ---
+Completed in 28.7187s. Throughput: 348.20 ops/sec
+
+--- Benchmarking RedisDb (Concurrency: 1, Ops: 10000) ---
+Completed in 11.6861s. Throughput: 855.72 ops/sec
+
+--- Final Results (Ops/Sec) ---
+PostgresDb: 631.19
+MongoDb: 815.71
+CassandraDb: 348.20
+RedisDb: 855.72
