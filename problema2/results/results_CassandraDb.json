@@ -30,13 +30,13 @@
             {
                 "produto_id": "9999999991",
                 "categoria": "Snacks",
-                "data_atualizacao": "2025-11-22 15:41:45.130000",
+                "data_atualizacao": "2025-11-28 10:51:03.758000",
                 "marca": "MarcaX",
                 "nome": "Produto Benchmark 2",
                 "nutrientes": "{'energia': 500.0, 'vitamina_c': 15.0}"
             }
         ],
-        "find_by_marca_and_nutriscore": [
+        "find_by_marca": [
             {
                 "produto_id": "3017625073309",
                 "categoria": "Sugary snacks",
@@ -2468,16 +2468,16 @@
         "delete_produto": true
     },
     "timings": {
-        "read_produto": 0.002885831010644324,
-        "create_produto": 0.001228218010510318,
-        "add_new_nutrient_vitamin_c": 0.0005564859893638641,
-        "get_batch_products": 0.001865229001850821,
-        "find_by_marca_and_nutriscore": 3.5548489760112716,
-        "find_by_energia_range": 0.08596679600304924,
-        "find_products_with_calcium": 7.677669031007099,
-        "search_by_name": 0.12121923099039122,
-        "aggregate_avg_carbs_by_category": 5.475126946999808,
-        "delete_produto": 0.0008077259990386665
+        "read_produto": 0.005325512999661441,
+        "create_produto": 0.0028507699998954195,
+        "add_new_nutrient_vitamin_c": 0.002634660999319749,
+        "get_batch_products": 0.010383363000073587,
+        "find_by_marca": 3.502409779000118,
+        "find_by_energia_range": 0.08562757900017459,
+        "find_products_with_calcium": 6.750701674000084,
+        "search_by_name": 0.11487769799987291,
+        "aggregate_avg_carbs_by_category": 5.754557187000501,
+        "delete_produto": 0.001342182999906072
     },
-    "total_time": 16.922174471023027
+    "total_time": 16.230710406999606
 }

@@ -367,6 +367,9 @@ if __name__ == "__main__":
     red = RedisDb()
 
     if not os.path.exists("./results"): os.makedirs("./results")
+    
+    with open("./results/OUT.txt", "w") as f:
+        f.write("")
 
     for db in [pg, mongo, cass, red]:
         
@@ -389,7 +392,13 @@ if __name__ == "__main__":
             
             with open(f"./results/results_{name}.json", "w") as f:
                 json.dump(results, f, indent=4, default=str)
-            print(f"fim. Tempo total: {results['total_time']:.4f}s")
+            
+            num_operations = 10
+            throughput = num_operations / results['total_time']
+            
+            with open("./results/OUT.txt", "a") as f:
+                f.write(f"{name}: {results['total_time']:.4f}s ({throughput:.2f} ops/sec)\n")
+            print(f"fim. Tempo total: {results['total_time']:.4f}s. Throughput: {throughput:.2f} ops/sec")
         except Exception as e:
             print(f"erro --> {e}")
             traceback.print_exc()

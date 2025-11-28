@@ -26,3 +26,11 @@ PostgresDb: 0.0618s
 MongoDb: 0.0663s
 CassandraDb: 0.7833s
 RedisDb: 6.0944s
+PostgresDb: 0.0362s
+MongoDb: 0.0472s
+CassandraDb: 0.6117s
+RedisDb: 6.7640s
+PostgresDb: 0.0381s (262.80 ops/sec)
+MongoDb: 0.0500s (199.82 ops/sec)
+CassandraDb: 0.6268s (15.95 ops/sec)
+RedisDb: 7.2905s (1.37 ops/sec)

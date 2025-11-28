@@ -122362,11 +122362,11 @@
         "delete_pedido": true,
         "get_top_10_clientes_por_pedidos": [
             {
-                "cliente_id": "4651",
+                "cliente_id": "2410",
                 "total_pedidos": 8
             },
             {
-                "cliente_id": "2410",
+                "cliente_id": "4651",
                 "total_pedidos": 8
             },
             {
@@ -122378,11 +122378,11 @@
                 "total_pedidos": 8
             },
             {
-                "cliente_id": "5657",
+                "cliente_id": "206",
                 "total_pedidos": 7
             },
             {
-                "cliente_id": "1811",
+                "cliente_id": "381",
                 "total_pedidos": 7
             },
             {
@@ -122390,7 +122390,7 @@
                 "total_pedidos": 7
             },
             {
-                "cliente_id": "206",
+                "cliente_id": "1685",
                 "total_pedidos": 7
             },
             {
@@ -122398,22 +122398,22 @@
                 "total_pedidos": 7
             },
             {
-                "cliente_id": "152",
+                "cliente_id": "1811",
                 "total_pedidos": 7
             }
         ]
     },
     "timings": {
-        "read_cliente": 0.0006926739997652476,
-        "create_produto": 0.000545693999811192,
-        "update_produto_preco": 0.0008429339995927876,
-        "find_pedidos_por_status": 0.02923006000037276,
-        "find_pedidos_por_data": 0.009018178000587795,
-        "find_pedidos_por_cliente": 0.00657846400008566,
-        "find_itens_por_pedido": 0.0008697650000613066,
-        "find_cliente_por_pedido": 0.0012056920004397398,
-        "delete_pedido": 0.0008252069992522593,
-        "get_top_10_clientes_por_pedidos": 0.01647093900010077
+        "read_cliente": 0.0004648090002774552,
+        "create_produto": 0.00031985999976313906,
+        "update_produto_preco": 0.0005411249999269785,
+        "find_pedidos_por_status": 0.02102568500004054,
+        "find_pedidos_por_data": 0.005303339999954915,
+        "find_pedidos_por_cliente": 0.005570149000050151,
+        "find_itens_por_pedido": 0.00036633999980040244,
+        "find_cliente_por_pedido": 0.000481632000173704,
+        "delete_pedido": 0.0002505689999452443,
+        "get_top_10_clientes_por_pedidos": 0.015722697000001062
     },
-    "total_time": 0.06627960700006952
+    "total_time": 0.05004620599993359
 }

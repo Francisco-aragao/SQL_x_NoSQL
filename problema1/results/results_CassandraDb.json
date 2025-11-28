@@ -35508,16 +35508,16 @@
         ]
     },
     "timings": {
-        "read_cliente": 0.00415342199994484,
-        "create_produto": 9.219993444276042e-07,
-        "update_produto_preco": 5.749998308601789e-07,
-        "find_pedidos_por_status": 0.27042748399981065,
-        "find_pedidos_por_data": 0.16201947399986238,
-        "find_pedidos_por_cliente": 0.0020348180005385075,
-        "find_itens_por_pedido": 0.0018113100004484295,
-        "find_cliente_por_pedido": 0.11618818100032513,
-        "delete_pedido": 0.08102721999966889,
-        "get_top_10_clientes_por_pedidos": 0.1456064449994301
+        "read_cliente": 0.003660190999653423,
+        "create_produto": 1.8410000848234631e-06,
+        "update_produto_preco": 9.559998943586834e-07,
+        "find_pedidos_por_status": 0.202091381000173,
+        "find_pedidos_por_data": 0.14799365199996828,
+        "find_pedidos_por_cliente": 0.00169933500001207,
+        "find_itens_por_pedido": 0.0017983989996537275,
+        "find_cliente_por_pedido": 0.0948534600001949,
+        "delete_pedido": 0.08416048599974602,
+        "get_top_10_clientes_por_pedidos": 0.09053639599960661
     },
-    "total_time": 0.7832698509992042
+    "total_time": 0.6267960969989872
 }

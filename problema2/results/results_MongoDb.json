@@ -59,7 +59,7 @@
                 }
             }
         ],
-        "find_by_marca_and_nutriscore": [
+        "find_by_marca": [
             {
                 "_id": "0009800000715",
                 "nome": "Rocher, Hazelnut Chocolates",
@@ -4278,10 +4278,6 @@
                 "media": 77868.09167504881
             },
             {
-                "_id": "Palm-sugar",
-                "media": 100.0
-            },
-            {
                 "_id": "Asian-grocery",
                 "media": 100.0
             },
@@ -4292,21 +4288,25 @@
             {
                 "_id": "fr:Sucre-en-petits-morceaux",
                 "media": 100.0
+            },
+            {
+                "_id": "Palm-sugar",
+                "media": 100.0
             }
         ],
         "delete_produto": true
     },
     "timings": {
-        "read_produto": 0.018486815999494866,
-        "create_produto": 0.0014085459988564253,
-        "add_new_nutrient_vitamin_c": 0.002479164002579637,
-        "get_batch_products": 0.005283218008116819,
-        "find_by_marca_and_nutriscore": 0.09602920999168418,
-        "find_by_energia_range": 0.0008918470120988786,
-        "find_products_with_calcium": 0.1441712399973767,
-        "search_by_name": 0.004178389004664496,
-        "aggregate_avg_carbs_by_category": 0.20696368000062648,
-        "delete_produto": 0.0009975680004572496
+        "read_produto": 0.008150415999807592,
+        "create_produto": 0.0002882649996536202,
+        "add_new_nutrient_vitamin_c": 0.00024874900009308476,
+        "get_batch_products": 0.00029707599969697185,
+        "find_by_marca": 0.09777540599952772,
+        "find_by_energia_range": 0.0010288280000168015,
+        "find_products_with_calcium": 0.11867076599992288,
+        "search_by_name": 0.001220086999637715,
+        "aggregate_avg_carbs_by_category": 0.17481196799963072,
+        "delete_produto": 0.00044161000005260576
     },
-    "total_time": 0.4808896780159557
+    "total_time": 0.4029331709980397
 }

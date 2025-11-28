@@ -470,6 +470,12 @@ if __name__ == "__main__":
     mongo = MongoDb()
     cassandra = CassandraDb()
     redis_db = RedisDb()
+    
+    # Limpa o arquivo OUT.txt antes de começar
+    import os
+    os.makedirs("./results", exist_ok=True)
+    with open("./results/OUT.txt", "w") as f:
+        f.write("")
 
     for db in [postgress, mongo, cassandra, redis_db]:
         print(f"\n--- Testando {db.__class__.__name__} ---")
@@ -489,9 +495,12 @@ if __name__ == "__main__":
             with open(f"./results/results_{db.__class__.__name__}.json", "w") as f:
                 json.dump(results, f, default=str, indent=4)
 
+            num_operations = 10
+            throughput = num_operations / results['total_time']
+            
             with open("./results/OUT.txt", "a") as f:
-                f.write(f"{db.__class__.__name__}: {results['total_time']:.4f}s\n")
-            print(f"fim. Tempo total: {results['total_time']:.4f}s")
+                f.write(f"{db.__class__.__name__}: {results['total_time']:.4f}s ({throughput:.2f} ops/sec)\n")
+            print(f"fim. Tempo total: {results['total_time']:.4f}s. Throughput: {throughput:.2f} ops/sec")
         except Exception as e:
             print(f"erro --> {e}")
             traceback.print_exc()
