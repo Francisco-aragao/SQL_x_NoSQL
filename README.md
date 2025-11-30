@@ -46,10 +46,15 @@ Em todo caso, recomendamos o uso do Docker para facilitar a instalação e confi
 ## Estrutura dos arquivos
 
 `problemaX` - Contém o arquivo para cada problema X (1, 2, 3...), conectando com o banco, criando tabelas, inserindo dados e fazendo consultas.
+
 `data` - Contém os arquivos CSV dentro da pasta de cada problema. **IMPORTANTE**: É necessário baixar os datasets e coloca-los na pasta `data` para realizar os testes. Os datasets estão referenciados na descrição de cada problema.
+
 `start_databases.sh` - Script para iniciar os containers Docker com os bancos que serão utilizados.
+
 `stop_databases.sh` - Script para parar os containers Docker e apagar os containers.
+
 `requirements.txt` - Dependências Python necessárias para rodar os scripts em cada problema.
+
 `check_db.py` - Script para verificar se os bancos estão funcionando corretamente.
 
 ## Como rodar
@@ -83,7 +88,7 @@ python3 queries.py # executar consultas e salvar resultados na pasta 'results'
 
 ### Problemas
 
-#### 1. Modelagem de sistema de vendas possuindo clientes, produtos e items. Tarefa é organizar os clientes e seus pedidos
+### 1. Modelagem de sistema de vendas possuindo clientes, produtos e items. Tarefa é organizar os clientes e seus pedidos
 
 [Database](https://www.kaggle.com/code/danttis/an-lise-explorat-ria-de-dados)
 
@@ -238,8 +243,10 @@ As consultas que foram testadas tentam executar operações básicas em bancos d
 Obs: A memória do Cassandra foi mais alta logo no ínicio foi isso foi definido durante a criação do container.
 
 ---
+---
+---
 
-#### 2. Modelagem de acesso a informações de produtos alimentícios, incluindo especificações nutricionais e ingredientes. Foco é recuperar rapidamente informações sobre produtos
+### 2. Modelagem de acesso a informações de produtos alimentícios, incluindo especificações nutricionais e ingredientes. Foco é recuperar rapidamente informações sobre produtos
 
 [Database](https://www.kaggle.com/datasets/openfoodfacts/world-food-facts)
 
@@ -348,8 +355,10 @@ As consultas que foram testadas tentam executar operações básicas em bancos d
 Obs: Novamente o Cassandra teve essa discrepância de memória logo no início pois isso foi definido durante a criação do container.
 
 ---
+---
+---
 
-#### 3. Modelagem de perfis de usuários e feed de atividades em uma rede social
+### 3. Modelagem de perfis de usuários e feed de atividades em uma rede social
 
 Usuário (perfil) possui:
 
@@ -489,7 +498,11 @@ Consultas implementadas:
 9. Calcular o total de interações agrupadas por tipo para um usuário
 10. Adicionar um novo campo `verified: true` apenas para usuários que têm mais de 10.000 seguidores
 
-#### 4. Modelagem de sistema de IoT que monitora temperatura e umidade em milhões de sensores
+---
+---
+---
+
+### 4. Modelagem de sistema de IoT que monitora temperatura e umidade em milhões de sensores
 
 Cada sensor envia muitas leituras por minuto, há a escrita e leitura concorrente massiva de vários dados de sensores.
 
