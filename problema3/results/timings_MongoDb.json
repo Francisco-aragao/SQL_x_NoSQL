@@ -1,0 +1,13 @@
+{
+    "op1_create_user": 0.010530200001085177,
+    "op2_read_user": 0.0356944749946706,
+    "op3_update_user_stats": 0.0009405639721080661,
+    "op5_create_post_update_stats": 0.001007061975542456,
+    "op4_delete_activity": 0.00046041799942031503,
+    "op6_get_feed": 0.0010752489906735718,
+    "op7_get_user_likes": 0.0020607810001820326,
+    "op8_search_hashtag": 0.0065495839808136225,
+    "op9_aggregate_type_count": 0.014489066001260653,
+    "op10_schema_evolution": 0.0009898930147755891,
+    "total_time": 0.07379729193053208
+}

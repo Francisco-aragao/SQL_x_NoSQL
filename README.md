@@ -262,6 +262,8 @@ Usuário (perfil) possui:
 Atividade possui: 
 - id, id do usuário, tipo, timestamp, conteúdo (payload).
 
+[Database](https://zenodo.org/records/13382873)
+
 PostgreSQL 
 
 ```sql
@@ -364,6 +366,24 @@ MongoDB
 db.users.createIndex({ handle: 1 }, { unique: true })
 db.activities.createIndex({ userId: 1, ts: -1 })
 ```
+
+Consultas implementadas:
+
+#### Operações simples
+1. Criar um novo usuário
+2. Buscar um perfil pelo ID
+3. Atualizar as estatísticas do perfil
+4. Excluir uma atividade do usuário 
+5. Criar um novo post, atualizando as duas tabelas (atividades e usuários)
+
+#### Operações de busca e filtros
+6. Buscar o feed do usuário: trazer todas as atividades ordenadas pelo tempo
+7. Filtrar todos os likes de um usuário
+8. Buscar todos os posts e comentários que contenham determinada hashtag
+
+#### Operações complexas
+9. Calcular o total de interações agrupadas por tipo para um usuário
+10. Adicionar um novo campo `verified: true` apenas para usuários que têm mais de 10.000 seguidores
 
 #### 4. Modelagem de sistema de IoT que monitora temperatura e umidade em milhões de sensores.
 

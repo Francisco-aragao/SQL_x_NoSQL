@@ -1,0 +1,4 @@
+PostgresDb: 0.2990s (33.45 ops/sec)
+MongoDb: 0.0738s (135.51 ops/sec)
+CassandraDb: 30.0522s (0.33 ops/sec)
+RedisDb: 162.7347s (0.06 ops/sec)
