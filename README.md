@@ -290,6 +290,7 @@ CREATE TABLE activities (
 CREATE UNIQUE INDEX idx_users_handle ON users(handle);
 CREATE INDEX idx_activities_user ON activities(user_id);
 CREATE INDEX idx_activities_ts ON activities(ts DESC);
+CREATE INDEX idx_users_followers ON users(followers);
 ```
 
 Cassandra 
@@ -319,6 +320,8 @@ CREATE TABLE user_by_handle (
   handle TEXT PRIMARY KEY,
   user_id TEXT
 );
+
+CREATE INDEX IF NOT EXISTS idx_users_followers ON users (followers);
 ```
 
 Redis 
@@ -365,6 +368,7 @@ MongoDB
 
 db.users.createIndex({ handle: 1 }, { unique: true })
 db.activities.createIndex({ userId: 1, ts: -1 })
+db.users.create_index({stats.followers: 1})
 ```
 
 Consultas implementadas:
