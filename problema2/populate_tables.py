@@ -13,7 +13,7 @@ from datetime import datetime
 import numpy as np
 
 DATA_DIR = './data'
-FILENAME = 'en.openfoodfacts.org.products.tsv' # nome do dataset
+FILENAME = 'en.openfoodfacts.org.products.tsv'
 
 def connect_postgres():
     print("conectando postgres...")
@@ -144,7 +144,6 @@ def load_into_mongo(db, df):
             "nutrientes": {}
         }
         
-        # Só adiciona nutrientes se eles existirem (não insere null)
         nutrientes = ['energia', 'gordura', 'carboidratos', 'proteinas', 'fibras', 'sodio']
         for nutri in nutrientes:
             if row[nutri] is not None:

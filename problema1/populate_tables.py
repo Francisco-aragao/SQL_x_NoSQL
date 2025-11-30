@@ -153,7 +153,6 @@ def load_into_mongo(db, df_customers, df_products, df_full_order):
         db["clientes"].insert_many(cliente_docs)
         print(f"mongo-> {len(cliente_docs)} clientes carregados.")
 
-    # Itens (Bulk)
     item_docs = [
         {"_id": row['product_id'], "nome": row['product_name'], "valor": row['price']}
         for _, row in df_products.iterrows()
@@ -190,8 +189,7 @@ def load_into_mongo(db, df_customers, df_products, df_full_order):
 
 def load_into_cassandra(session, df_customers, df_full_order):
     """
-    Insiro dados no Cassandra. Não faço em batch pois no Cassandra, isso não é recomendado. -> gera sobrecarga no nó coordenador.
-    conferir: https://github.com/thingsboard/thingsboard/issues/8512
+    Insiro dados no Cassandra. Não faço em batch nesse exemplo pois são poucos dados.
 
     Não precisa de 'df_products' pois o modelo de dados é denormalizado  e focado nas queries. Não temos uma tabela 'produtos' separada; 
     todos os dados necessários (como 'item_id', 'quantidade' e 'preco_unit') já vêm do 'df_full_order' (o merge de pedidos e itens).

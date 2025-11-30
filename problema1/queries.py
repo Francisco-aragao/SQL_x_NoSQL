@@ -123,7 +123,7 @@ class MongoDb(AbstractDb):
     def connect(self):
         try:
             self.conn = MongoClient("mongodb://admin:admin@localhost:27017/")
-            self.conn.admin.command('ping') # Testa a conexão
+            self.conn.admin.command('ping') 
             self.db = self.conn["trabalho_bd"]
             print("mongodb conectado")
         except Exception as e:
@@ -471,7 +471,6 @@ if __name__ == "__main__":
     cassandra = CassandraDb()
     redis_db = RedisDb()
     
-    # Limpa o arquivo OUT.txt antes de começar
     import os
     os.makedirs("./results", exist_ok=True)
     with open("./results/OUT.txt", "w") as f:

@@ -41,7 +41,6 @@ def check_cassandra():
         cluster.shutdown()
     except Exception as e:
         print(f"erro --> Cassandra: {e}")
-        print("   (Dica: O Cassandra demora 1-2 min para subir. Tente de novo em breve.)")
     print("-" * 30)
 
 def check_redis():

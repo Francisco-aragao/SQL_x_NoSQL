@@ -60,8 +60,6 @@ class AbstractFoodDb(ABC):
         """
         pass
 
-    # --- Buscas e Filtros ---
-
     @abstractmethod
     def get_batch_products(self, ids: List[str]) -> List[Dict[str, Any]]:
         """
@@ -93,8 +91,6 @@ class AbstractFoodDb(ABC):
         Retorna uma lista de dicionários com os dados dos produtos encontrados.
         """
         pass
-
-    # --- Consultas Complexas ---
 
     @abstractmethod
     def search_by_name(self, partial_name: str) -> List[Dict[str, Any]]:
