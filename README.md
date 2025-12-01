@@ -599,7 +599,38 @@ MongoDB
   "meta": { "firmware": "1.4.2" }
 }
 
-db.sensorDataClassic.createIndex({ sensor_id: 1, ts: -1 });
-
 db.sensorDataClassic.createIndex({ ts: 1 }, { expireAfterSeconds: 90 * 24 * 3600 });
 ```
+
+### Resultados de Performance
+
+| Métrica                            | PostgreSQL              | MongoDB                 | Cassandra               | Redis                   |
+| :--------------------------------- | :---------------------- | :---------------------- | :---------------------- | :---------------------- |
+| **10K Entradas — Tempo (s)**       |                         |                         |                         |                         |
+| T = 1                              | **0.6666**              | **1.0187**              | 1.9499                  | 0.9884                  |
+| T = 4                              | 0.8135                  | 1.0780                  | 1.2025                  | **0.9363**              |
+| T = 8                              | 0.7609                  | 1.0290                  | **1.0523**              | 0.9781                  |
+| **10K Entradas — Vazão (ops/s)**   |                         |                         |                         |                         |
+| T = 1                              | **1500.11**             | **981.61**              | 512.85                  | 1011.78                 |
+| T = 4                              | 1229.20                 | 927.62                  | 831.61                  | **1067.98**             |
+| T = 8                              | 1314.17                 | 971.79                  | **950.33**              | 1022.42                 |
+| **10K Entradas — RAM (T=1)**       | 31.9MiB (Máx 34.76MiB)  | 194.6MiB (Máx 200.2MiB) | 8.943GiB (Máx 8.959GiB) | 3.355MiB (Máx 5.605MiB) |
+| **10K Entradas — RAM (T=4)**       | 31.9MiB (Máx 34.76MiB)  | 194.6MiB (Máx 199.3MiB) | 8.943GiB (Máx 8.954GiB) | 3.355MiB (Máx 5.863MiB) |
+| **10K Entradas — RAM (T=8)**       | 31.9MiB (Máx 34.63MiB)  | 194.6MiB (Máx 199.8MiB) | 8.943GiB (Máx 8.970GiB) | 3.355MiB (Máx 5.637MiB) |
+| **10K Entradas — CPU Máx (%) T=1** | 17.41                   | 20.97                   | 99.55                   | 0.23                    |
+| **10K Entradas — CPU Máx (%) T=4** | 17.41                   | 22.19                   | 2.85                    | 5.85                    |
+| **10K Entradas — CPU Máx (%) T=8** | 16.75                   | 14.82                   | 73.67                   | 4.16                    |
+| **1M Entradas — Tempo (s)**        |                         |                         |                         |                         |
+| T = 1                              | 15.8431                 | 12.2593                 | 28.7187                 | 11.6861                 |
+| T = 4                              | 7.0386                  | **5.6326**              | 15.6153                 | 8.5810                  |
+| T = 8                              | **6.8559**              | 7.6412                  | **12.8045**             | **6.6573**              |
+| **1M Entradas — Vazão (ops/s)**    |                         |                         |                         |                         |
+| T = 1                              | 631.19                  | 815.71                  | 348.20                  | 855.72                  |
+| T = 4                              | 1420.75                 | **1775.38**             | 640.40                  | 1165.37                 |
+| T = 8                              | **1458.59**             | 1308.70                 | 780.97                  | **1502.10**             |
+| **1M Entradas — RAM (T=1)**        | 34.18MiB (Máx 164.3MiB) | 203.1MiB (Máx 539.7MiB) | 8.912GiB (Máx 8.945GiB) | 3.855MiB (Máx 146.9MiB) |
+| **1M Entradas — RAM (T=4)**        | 34.18MiB (Máx 165.0MiB) | 203.1MiB (Máx 543.8MiB) | 8.912GiB (Máx 9.010GiB) | 3.855MiB (Máx 146.9MiB) |
+| **1M Entradas — RAM (T=8)**        | 34.18MiB (Máx 176.8MiB) | 203.1MiB (Máx 543.7MiB) | 8.912GiB (Máx 9.036GiB) | 3.855MiB (Máx 147.1MiB) |
+| **1M Entradas — CPU Máx (%) T=1**  | 22.61                   | 7.51                    | 1.06                    | 0.23                    |
+| **1M Entradas — CPU Máx (%) T=4**  | 33.40                   | 84.42                   | 232.95                  | 9.11                    |
+| **1M Entradas — CPU Máx (%) T=8**  | 48.44                   | 64.99                   | 122.92                  | 9.30                    |
