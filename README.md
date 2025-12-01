@@ -498,6 +498,31 @@ Consultas implementadas:
 9. Calcular o total de interações agrupadas por tipo para um usuário
 10. Adicionar um novo campo `verified: true` apenas para usuários que têm mais de 10.000 seguidores
 
+### Resultados de Performance
+
+| Métrica                             | PostgreSQL | MongoDB    | Cassandra   | Redis        |
+| :---------------------------------- | :--------- | :--------- | :---------- | :----------- |
+| **Tempos de Execução (s)**          |            |            |             |              |
+| `op1_create_user`                   | 0.0605     | 0.0105     | 0.0035      | 0.0012       |
+| `op2_read_user`                     | 0.0485     | 0.0357     | 0.0373      | 0.0003       |
+| `op3_update_user_stats`             | 0.0292     | 0.0009     | 0.0120      | 0.0002       |
+| `op5_create_post_update_stats`      | 0.0424     | 0.0010     | 0.0080      | 0.0004       |
+| `op4_delete_activity`               | 0.0016     | 0.0005     | 0.0058      | 0.0003       |
+| `op6_get_feed`                      | 0.0016     | 0.0011     | 0.0909      | 0.0012       |
+| `op7_get_user_likes`                | 0.0005     | 0.0021     | 0.0372      | 0.0226       |
+| `op8_search_hashtag`                | 0.0440     | 0.0065     | 0.1433      | 0.7024       |
+| `op9_aggregate_type_count`          | 0.0158     | 0.0145     | 0.0193      | 0.2098       |
+| `op10_schema_evolution`             | 0.0548     | 0.0010     | 29.6951     | 161.7963     |
+| **Total Time**                      | **0.2990** | **0.0738** | **30.0522** | **162.7347** |
+| **Operações por Segundo (ops/sec)** | 33.45      | 135.51     | 0.33        | 0.06         |
+| **Consumo de Recursos (Antes)**     |            |            |             |              |
+| CPU (Antes)                         | 2.01%      | 0.65%      | 3.59%       | 0.79%        |
+| Memória (Antes)                     | 24.06MiB   | 110MiB     | 2.293GiB    | 6.301MiB     |
+| **Consumo de Recursos (Depois)**    |            |            |             |              |
+| CPU (Depois)                        | 0.20%      | 0.78%      | 3.23%       | 0.69%        |
+| Memória (Depois)                    | 249.7MiB   | 1.579GiB   | 2.597GiB    | 2.981GiB     |
+
+
 ---
 ---
 ---
